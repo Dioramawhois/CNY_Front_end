@@ -1,0 +1,63 @@
+.user-manager {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .user-manager textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+  }
+  
+  .user-manager .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Расстояние между кнопками */
+    margin-bottom: 20px;
+  }
+  
+  .user-manager .add-user-btn {
+    display: inline-block;
+    background-color: #00DDEB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-manager .delete-all-btn {
+    display: inline-block;
+    background-color: #FF4B4B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-list .delete-btn {
+    background-color: #FF4B4B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
