@@ -1,36 +1,25 @@
-.message-sender {
-    margin-bottom: 30px;
-  }
-  
-  textarea {
-    width: 300px;
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .button-group {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .send-button, .stop-button {
-    background-color: #5B42F3;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .stop-button {
-    background-color: #FF4E50;
-  }
-  
-  .send-button:hover, .stop-button:hover {
-    opacity: 0.8;
-  }
-  
+.message-sender .log-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2c2f33;
+  border-radius: 8px;
+}
+
+.message-sender .log-container h3 {
+  color: #00ddee;
+}
+
+.message-sender .log-messages {
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #23272a;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message-sender .log-message {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
