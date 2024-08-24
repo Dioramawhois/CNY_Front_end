@@ -1,30 +1,24 @@
-import re
+from telethon.sync import TelegramClient
+from telethon.errors import UsernameInvalidError
+from config import API_ID, API_HASH
 
 class UserManager:
-    def __init__(self, database):
-        self.db = database
+    def __init__(self):
+        self.client = TelegramClient('session_name', API_ID, API_HASH)
+        self.client.start()
 
-    def add_users(self, input_data):
-        users = self.parse_input(input_data)
-        for user in users:
-            self.db.add_user(user['user_id'], user['username'], user['user_firstname'])
+    def get_user_id(self, username):
+        try:
+            user = self.client.get_entity(username)
+            return user.id, user.username, user.first_name
+        except UsernameInvalidError:
+            return None
 
-    def delete_user(self, user_id):
-        self.db.delete_user(user_id)
-
-    def fetch_users(self):
-        return self.db.fetch_users()
-
-    def parse_input(self, input_data):
-        users = []
-        lines = input_data.splitlines()
-        for line in lines:
-            if line.isdigit():
-                users.append({'user_id': line, 'username': None, 'user_firstname': None})
-            elif line.startswith('https://t.me/'):
-                username = line.split('/')[-1]
-                users.append({'user_id': None, 'username': username, 'user_firstname': None})
-            elif line.startswith('@'):
-                username = line[1:]
-                users.append({'user_id': None, 'username': username, 'user_firstname': None})
-        return users
+    def add_user(self, db, username):
+        user_info = self.get_user_id(username)
+        if user_info:
+            user_id, username, user_firstname = user_info
+            db.add_user(user_id, username, user_firstname, '2024-08-24', 'user')
+            return True
+        else:
+            return False

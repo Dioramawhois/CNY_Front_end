@@ -1,66 +1,37 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
-import asyncio
-from database import Database
-from chat_manager import ChatManager
 from user_manager import UserManager
+from chat_manager import ChatManager
+from db_manager import Database
 
 app = Flask(__name__)
-CORS(app)
-
-# Настройки базы данных и Telegram
-db = Database(host="localhost", database="telegram", user="bot", password="VPS")
-chat_manager = ChatManager(api_id='YOUR_API_ID', api_hash='YOUR_API_HASH', bot_token='YOUR_BOT_TOKEN')
-user_manager = UserManager(db)
-
-# Логика рассылки
-is_sending = False
-
-@app.route('/api/start', methods=['POST'])
-def start_sending():
-    global is_sending
-    data = request.json
-    message = data.get('message', '')
-    
-    if not message:
-        return jsonify({"error": "Message is required"}), 400
-
-    is_sending = True
-    asyncio.run(send_message_to_all_users(message))
-    
-    return jsonify({"status": "started", "echo": message})
-
-@app.route('/api/stop', methods=['POST'])
-def stop_sending():
-    global is_sending
-    is_sending = False
-    return jsonify({"status": "stopped"})
-
-async def send_message_to_all_users(message):
-    global is_sending
-    users = user_manager.fetch_users()
-    user_ids = [user[0] for user in users]
-
-    if is_sending:
-        await chat_manager.send_message_to_all(user_ids, message)
+db = Database()
+user_manager = UserManager()
+chat_manager = ChatManager()
 
 @app.route('/api/users/add', methods=['POST'])
 def add_user():
-    data = request.json
-    user_manager.add_users(data.get('users', ''))
-    return jsonify({"status": "Users added"})
+    username = request.json.get('username')
+    if user_manager.add_user(db, username):
+        return jsonify({"status": "success", "message": f"User {username} added successfully"}), 200
+    else:
+        return jsonify({"status": "error", "message": f"Could not add user: {username}"}), 400
 
 @app.route('/api/users/delete', methods=['POST'])
 def delete_user():
-    data = request.json
-    user_id = data.get('user_id')
-    user_manager.delete_user(user_id)
-    return jsonify({"status": "User deleted"})
+    user_id = request.json.get('user_id')
+    db.delete_user(user_id)
+    return jsonify({"status": "success", "message": f"User {user_id} deleted successfully"}), 200
 
 @app.route('/api/users/list', methods=['GET'])
 def list_users():
-    users = user_manager.fetch_users()
-    return jsonify(users)
+    users = db.get_all_users()
+    return jsonify(users), 200
 
-if __name__ == '__main__':
+@app.route('/api/send_message', methods=['POST'])
+def send_message():
+    message = request.json.get('message')
+    chat_manager.broadcast(db, message)
+    return jsonify({"status": "success", "message": "Message broadcasted successfully"}), 200
+
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
