@@ -1,67 +1,76 @@
 import React, { useState } from 'react';
-import '../styles/MessageSender.css';
 
 const MessageSender = () => {
-    const [message, setMessage] = useState('');
-    const [isSending, setIsSending] = useState(false);
-    const [logMessages, setLogMessages] = useState([]); // State для логов
+  const [message, setMessage] = useState('');
+  const [log, setLog] = useState([]);
+  const [isSending, setIsSending] = useState(false);
 
-    const handleSendMessage = () => {
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const sendMessage = async () => {
+    try {
+      const response = await fetch('/api/start', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setLog((prevLog) => [...prevLog, `Message sent to users: ${data.echo}`]);
         setIsSending(true);
-        // Имитация отправки сообщения
-        setTimeout(() => {
-            const log = `Message sent to users: ${message}`;
-            addLogMessage(log);
-            setIsSending(false);
-        }, 1000); // Задержка для имитации отправки
-    };
+      } else {
+        setLog((prevLog) => [...prevLog, 'Error sending message']);
+      }
+    } catch (error) {
+      setLog((prevLog) => [...prevLog, `Error: ${error.message}`]);
+    }
+  };
 
-    const handleStopSending = () => {
+  const stopSending = async () => {
+    try {
+      const response = await fetch('/api/stop', {
+        method: 'POST',
+      });
+
+      if (response.ok) {
+        setLog((prevLog) => [...prevLog, 'Message sending stopped.']);
         setIsSending(false);
-        addLogMessage("Message sending stopped.");
-    };
+      } else {
+        setLog((prevLog) => [...prevLog, 'Error stopping message sending.']);
+      }
+    } catch (error) {
+      setLog((prevLog) => [...prevLog, `Error: ${error.message}`]);
+    }
+  };
 
-    const addLogMessage = (logMessage) => {
-        setLogMessages((prevLogs) => [...prevLogs, logMessage]);
-    };
-
-    return (
-        <div className="message-sender">
-            <h2>Message Sender</h2>
-            <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Type your message here..."
-                disabled={isSending}
-            />
-            <div className="button-container">
-                <button
-                    className="button-64"
-                    onClick={handleSendMessage}
-                    disabled={isSending}
-                >
-                    <span className="text">Send Message</span>
-                </button>
-                <button
-                    className="button-64 stop-button"
-                    onClick={handleStopSending}
-                    disabled={!isSending}
-                >
-                    <span className="text">Stop Sending</span>
-                </button>
-            </div>
-            <div className="log-container">
-                <h3>Log</h3>
-                <div className="log-messages">
-                    {logMessages.map((log, index) => (
-                        <div key={index} className="log-message">
-                            {log}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <h2>Message Sender</h2>
+      <input
+        type="text"
+        value={message}
+        onChange={handleMessageChange}
+        placeholder="Enter your message here"
+      />
+      <button onClick={sendMessage} disabled={isSending}>
+        Send Message
+      </button>
+      <button onClick={stopSending} disabled={!isSending}>
+        Stop Sending
+      </button>
+      <div className="log">
+        <h3>Log</h3>
+        {log.map((entry, index) => (
+          <p key={index}>{entry}</p>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default MessageSender;
