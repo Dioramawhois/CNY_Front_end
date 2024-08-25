@@ -1205,3 +1205,231 @@ HINT:  Perhaps you meant to reference the column "whitelist.user_id".
 2024-08-25 22:27:09.923 | INFO     | __main__:check_whitelist:143 - User 6094566638 is authorized.
 2024-08-25 22:27:22.006 | INFO     | __main__:check_whitelist:134 - Checking whitelist for user_id: 0
 2024-08-25 22:27:22.008 | INFO     | __main__:check_whitelist:143 - User 0 is authorized.
+2024-08-25 22:28:00.919 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:28:00.940 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:28:49.652 | INFO     | __main__:check_whitelist:134 - Checking whitelist for user_id: 1
+2024-08-25 22:28:49.656 | INFO     | __main__:check_whitelist:146 - User 1 is not authorized.
+2024-08-25 22:30:08.020 | INFO     | __main__:check_whitelist:134 - Checking whitelist for user_id: 6094566638
+2024-08-25 22:30:08.022 | INFO     | __main__:check_whitelist:143 - User 6094566638 is authorized.
+2024-08-25 22:30:20.673 | INFO     | __main__:start_sending_messages:30 - Started sending messages to all users.
+2024-08-25 22:30:20.849 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: Хай всем 
+2024-08-25 22:30:20.849 | INFO     | __main__:send_messages_to_all_users:48 - Message sent to user dyorcrpto
+2024-08-25 22:30:20.969 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: Хай всем 
+2024-08-25 22:30:20.969 | INFO     | __main__:send_messages_to_all_users:48 - Message sent to user Fckunggbtch
+2024-08-25 22:30:21.073 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: Хай всем 
+2024-08-25 22:30:21.074 | INFO     | __main__:send_messages_to_all_users:48 - Message sent to user testirovkaebalkarot
+2024-08-25 22:34:46.694 | DEBUG    | __main__:add_user:67 - {'users': 'https://t.me/bolik374\nhttps://t.me/cargo837A\nhttps://t.me/CB_VSP_bot\nhttps://t.me/ciofugo\nhttps://t.me/DC_OLEG\nhttps://t.me/dddyomin\nhttps://t.me/Dmitryswift\nhttps://t.me/emigrants360_bot\nhttps://t.me/evyska\nhttps://t.me/fouoji\nhttps://t.me/GX277Q\nhttps://t.me/ichu4037\nhttps://t.me/ifreaq\nhttps://t.me/IvanSwiftExch\nhttps://t.me/kodicode\nhttps://t.me/KosachKvitka_Groshify\nhttps://t.me/MOCKBA_Exchange\nhttps://t.me/nataly_1996\nhttps://t.me/paulswiftex\nhttps://t.me/swiftexchangemax\nhttps://t.me/t1erloevskiy\nhttps://t.me/tatyanka_valerievna\nhttps://t.me/THB_EX\nhttps://t.me/usdt_chang\nhttps://t.me/VadimS077\nhttps://t.me/Vtxxtr\n'}
+2024-08-25 22:34:46.696 | DEBUG    | __main__:add_user:74 - ['https://t.me/bolik374', 'https://t.me/cargo837A', 'https://t.me/CB_VSP_bot', 'https://t.me/ciofugo', 'https://t.me/DC_OLEG', 'https://t.me/dddyomin', 'https://t.me/Dmitryswift', 'https://t.me/emigrants360_bot', 'https://t.me/evyska', 'https://t.me/fouoji', 'https://t.me/GX277Q', 'https://t.me/ichu4037', 'https://t.me/ifreaq', 'https://t.me/IvanSwiftExch', 'https://t.me/kodicode', 'https://t.me/KosachKvitka_Groshify', 'https://t.me/MOCKBA_Exchange', 'https://t.me/nataly_1996', 'https://t.me/paulswiftex', 'https://t.me/swiftexchangemax', 'https://t.me/t1erloevskiy', 'https://t.me/tatyanka_valerievna', 'https://t.me/THB_EX', 'https://t.me/usdt_chang', 'https://t.me/VadimS077', 'https://t.me/Vtxxtr']
+2024-08-25 22:34:46.698 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:46.759 | ERROR    | user_manager:add_user:34 - Error adding user bolik374: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2024-08-25 22:34:46.760 | DEBUG    | __main__:add_user:91 - User added: False
+2024-08-25 22:34:46.761 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:46.843 | DEBUG    | user_manager:add_user:15 - User(id=7082991822, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=4280111883023307906, first_name='Ура-837А', last_name='Андрей.', username='cargo837A', phone=None, photo=UserProfilePhoto(photo_id=5188389904990723704, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x8fu\xb7\x91\xb3\x92\xd8\xeb\x8e\xf4QEkk\x13s'), status=UserStatusRecently(by_me=True), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5282822525837911765), usernames=[], stories_max_id=None, color=PeerColor(color=20, background_emoji_id=5298588027931605905), profile_color=None)
+2024-08-25 22:34:46.846 | INFO     | db_manager:add_user:24 - User cargo837A added to the database.
+2024-08-25 22:34:46.847 | INFO     | user_manager:add_user:31 - User cargo837A added successfully.
+2024-08-25 22:34:46.848 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:46.848 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:46.911 | DEBUG    | user_manager:add_user:15 - User(id=7168105796, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=True, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-6673774364323596944, first_name='Program Informant', last_name=None, username='CB_VSP_bot', phone=None, photo=UserProfilePhoto(photo_id=5197437734636084230, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xb0d\x9bp\x02?\x9f\xb9\xa2\x8a(\x03'), status=None, bot_info_version=1, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:46.914 | INFO     | db_manager:add_user:24 - User CB_VSP_bot added to the database.
+2024-08-25 22:34:46.915 | INFO     | user_manager:add_user:31 - User CB_VSP_bot added successfully.
+2024-08-25 22:34:46.915 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:46.916 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:46.984 | DEBUG    | user_manager:add_user:15 - User(id=6331463570, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-2041586004577875746, first_name='你猜哦让你', last_name=None, username='ciofugo', phone=None, photo=UserProfilePhoto(photo_id=5382065545328842888, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x81`\x88\xae\xf6p\x069\x1d\xe8\xa2\x8a\t\xb1'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=6073127870153099355), usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:46.986 | INFO     | db_manager:add_user:24 - User ciofugo added to the database.
+2024-08-25 22:34:46.987 | INFO     | user_manager:add_user:31 - User ciofugo added successfully.
+2024-08-25 22:34:46.987 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:46.988 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.055 | DEBUG    | user_manager:add_user:15 - User(id=5172696533, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-4754539087405591907, first_name='Digital', last_name='Oleg', username='DC_OLEG', phone=None, photo=UserProfilePhoto(photo_id=6213000571594585525, dc_id=5, has_video=True, personal=False, stripped_thumb=b'\x01\x08\x08\xaf\x84\x9502\x06s\xd3\x80(\xa2\x8aj)#)JM\xee\x7f'), status=UserStatusRecently(by_me=True), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5337082660164475701), usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.057 | INFO     | db_manager:add_user:24 - User DC_OLEG added to the database.
+2024-08-25 22:34:47.058 | INFO     | user_manager:add_user:31 - User DC_OLEG added successfully.
+2024-08-25 22:34:47.059 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.059 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.123 | DEBUG    | user_manager:add_user:15 - User(id=228662731, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=2502606971910309355, first_name='Dmitriy', last_name=None, username='dddyomin', phone=None, photo=UserProfilePhoto(photo_id=982098951915284418, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xcey\x00%{\x0f\xe7E\x14S\xb8\x8f'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5355126818502353892), usernames=[], stories_max_id=None, color=PeerColor(color=20, background_emoji_id=None), profile_color=None)
+2024-08-25 22:34:47.125 | INFO     | db_manager:add_user:24 - User dddyomin added to the database.
+2024-08-25 22:34:47.126 | INFO     | user_manager:add_user:31 - User dddyomin added successfully.
+2024-08-25 22:34:47.126 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.126 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.189 | ERROR    | user_manager:add_user:37 - Unexpected error adding Dmitryswift: No user has "dmitryswift" as username
+2024-08-25 22:34:47.190 | DEBUG    | __main__:add_user:91 - User added: False
+2024-08-25 22:34:47.190 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.252 | DEBUG    | user_manager:add_user:15 - User(id=1685203406, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=True, bot_chat_history=True, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=6312492653623736576, first_name='АДМИН | бот модератор', last_name=None, username='emigrants360_bot', phone=None, photo=UserProfilePhoto(photo_id=6115915408553913506, dc_id=5, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xd5\xcc\xbegA\xb7?\xa5\x14Q@\x1f'), status=None, bot_info_version=6, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.254 | INFO     | db_manager:add_user:24 - User emigrants360_bot added to the database.
+2024-08-25 22:34:47.255 | INFO     | user_manager:add_user:31 - User emigrants360_bot added successfully.
+2024-08-25 22:34:47.256 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.256 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.321 | DEBUG    | user_manager:add_user:15 - User(id=436188398, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-5955178861280869046, first_name='Eva', last_name='Kulikova', username='evyska', phone=None, photo=UserProfilePhoto(photo_id=1873414904760870828, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x9ay\x99$+\x1br\xa4a@\xea(\xa2\x8a\x00'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.323 | INFO     | db_manager:add_user:24 - User evyska added to the database.
+2024-08-25 22:34:47.324 | INFO     | user_manager:add_user:31 - User evyska added successfully.
+2024-08-25 22:34:47.324 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.325 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.388 | DEBUG    | user_manager:add_user:15 - User(id=6854142530, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=7494027281199534391, first_name='通津', last_name=None, username='fouoji', phone=None, photo=UserProfilePhoto(photo_id=5267407630970771420, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x8f\xed+\xe6\x15h\xd888\xc8\x14QE ?'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=6080270254737459589), usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.390 | INFO     | db_manager:add_user:24 - User fouoji added to the database.
+2024-08-25 22:34:47.391 | INFO     | user_manager:add_user:31 - User fouoji added successfully.
+2024-08-25 22:34:47.391 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.391 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.460 | DEBUG    | user_manager:add_user:15 - User(id=6372857322, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-8229308088087952978, first_name='Aurora', last_name='Irkutsk', username='GX277Q', phone=None, photo=UserProfilePhoto(photo_id=5440441671369215742, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xcf\xc4;7a\x83\x0f\xe1\xf5\xa2\x8a+T\xac5\x13'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5294015055992471554), usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.462 | INFO     | db_manager:add_user:24 - User GX277Q added to the database.
+2024-08-25 22:34:47.463 | INFO     | user_manager:add_user:31 - User GX277Q added successfully.
+2024-08-25 22:34:47.463 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.464 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.526 | DEBUG    | user_manager:add_user:15 - User(id=332693776, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-7159327305109163438, first_name='Андрей', last_name=None, username='ichu4037', phone=None, photo=UserProfilePhoto(photo_id=1428908887958988714, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xadj\x8e\t\x93fA\xc8<r(\xa2\x8a\x02\xc7'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.528 | INFO     | db_manager:add_user:24 - User ichu4037 added to the database.
+2024-08-25 22:34:47.529 | INFO     | user_manager:add_user:31 - User ichu4037 added successfully.
+2024-08-25 22:34:47.529 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.529 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.591 | DEBUG    | user_manager:add_user:15 - User(id=7164203459, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-6748686715227644988, first_name='Игорь', last_name='Добров', username='ifreaq', phone=None, photo=None, status=UserStatusRecently(by_me=True), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.593 | INFO     | db_manager:add_user:24 - User ifreaq added to the database.
+2024-08-25 22:34:47.593 | INFO     | user_manager:add_user:31 - User ifreaq added successfully.
+2024-08-25 22:34:47.594 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.594 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.663 | ERROR    | user_manager:add_user:37 - Unexpected error adding IvanSwiftExch: No user has "ivanswiftexch" as username
+2024-08-25 22:34:47.663 | DEBUG    | __main__:add_user:91 - User added: False
+2024-08-25 22:34:47.664 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.724 | DEBUG    | user_manager:add_user:15 - User(id=7105983137, is_self=True, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=7644935901337816167, first_name='Kodi', last_name=None, username='kodicode', phone='77751615032', photo=UserProfilePhoto(photo_id=5206372366123393314, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08n\xc66\x84\x8cl*G\xe9E\x14RC?'), status=UserStatusOnline(expires=datetime.datetime(2024, 8, 25, 22, 35, 20, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.727 | INFO     | db_manager:add_user:24 - User kodicode added to the database.
+2024-08-25 22:34:47.727 | INFO     | user_manager:add_user:31 - User kodicode added successfully.
+2024-08-25 22:34:47.727 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.727 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.790 | DEBUG    | user_manager:add_user:15 - User(id=5024759515, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=8952799186163786658, first_name='Kosach-Kvitka', last_name=None, username='KosachKvitka_Groshify', phone=None, photo=UserProfilePhoto(photo_id=5949714124252494037, dc_id=4, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xce\t\x95\xed\xf5\xa2\x8a)\x88'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:47.791 | INFO     | db_manager:add_user:24 - User KosachKvitka_Groshify added to the database.
+2024-08-25 22:34:47.792 | INFO     | user_manager:add_user:31 - User KosachKvitka_Groshify added successfully.
+2024-08-25 22:34:47.792 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.792 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.859 | DEBUG    | user_manager:add_user:15 - User(id=6045377833, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=8097442620949893766, first_name='A|X Exchange', last_name='ID: 6045377833', username='MOCKBA_Exchange', phone=None, photo=UserProfilePhoto(photo_id=5294251911010177543, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xd6\xf9\xf7\xf5\x1bsE\x14P\x07'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5345889288741461772), usernames=[], stories_max_id=None, color=PeerColor(color=20, background_emoji_id=5348503265967355284), profile_color=PeerColor(color=15, background_emoji_id=5348503265967355284))
+2024-08-25 22:34:47.860 | INFO     | db_manager:add_user:24 - User MOCKBA_Exchange added to the database.
+2024-08-25 22:34:47.861 | INFO     | user_manager:add_user:31 - User MOCKBA_Exchange added successfully.
+2024-08-25 22:34:47.861 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:47.861 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:47.932 | ERROR    | user_manager:add_user:37 - Unexpected error adding nataly_1996: No user has "nataly_1996" as username
+2024-08-25 22:34:47.933 | DEBUG    | __main__:add_user:91 - User added: False
+2024-08-25 22:34:47.933 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.008 | ERROR    | user_manager:add_user:37 - Unexpected error adding paulswiftex: No user has "paulswiftex" as username
+2024-08-25 22:34:48.009 | DEBUG    | __main__:add_user:91 - User added: False
+2024-08-25 22:34:48.009 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.096 | ERROR    | user_manager:add_user:37 - Unexpected error adding swiftexchangemax: No user has "swiftexchangemax" as username
+2024-08-25 22:34:48.097 | DEBUG    | __main__:add_user:91 - User added: False
+2024-08-25 22:34:48.097 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.169 | DEBUG    | user_manager:add_user:15 - User(id=362198424, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-6587171813975917448, first_name='Sam', last_name=None, username='t1erloevskiy', phone=None, photo=UserProfilePhoto(photo_id=1555630386198980527, dc_id=2, has_video=True, personal=False, stripped_thumb=b'\x01\x08\x08\xa4\x02\xb2\x9c\x13\x91E\x14R\x19'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:48.170 | INFO     | db_manager:add_user:24 - User t1erloevskiy added to the database.
+2024-08-25 22:34:48.171 | INFO     | user_manager:add_user:31 - User t1erloevskiy added successfully.
+2024-08-25 22:34:48.171 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:48.172 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.263 | DEBUG    | user_manager:add_user:15 - User(id=963496244, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-2123544179987636389, first_name='Татьяна', last_name='Сапронова', username='tatyanka_valerievna', phone=None, photo=None, status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:48.265 | INFO     | db_manager:add_user:24 - User tatyanka_valerievna added to the database.
+2024-08-25 22:34:48.266 | INFO     | user_manager:add_user:31 - User tatyanka_valerievna added successfully.
+2024-08-25 22:34:48.266 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:48.266 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.334 | DEBUG    | user_manager:add_user:15 - User(id=5330143762, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=3983409541504769463, first_name='THBex', last_name=None, username='THB_EX', phone=None, photo=UserProfilePhoto(photo_id=6089089953356168997, dc_id=5, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x9b\xf7\xdfi_\xbf\xbc\xb1\xcf\xa6(\xa2\x8a\x8d\xc4\x7f'), status=UserStatusRecently(by_me=True), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5451882707875276247), usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:48.336 | INFO     | db_manager:add_user:24 - User THB_EX added to the database.
+2024-08-25 22:34:48.336 | INFO     | user_manager:add_user:31 - User THB_EX added successfully.
+2024-08-25 22:34:48.337 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:48.337 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.399 | DEBUG    | user_manager:add_user:15 - User(id=5517401335, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=5744239832568676922, first_name='Вова', last_name='BLUE', username='usdt_chang', phone=None, photo=UserProfilePhoto(photo_id=5335074471352059664, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08]\xce\xad\x12\xb3\x05Dl\xa8\xc5\x14Q@\x1f'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:48.401 | INFO     | db_manager:add_user:24 - User usdt_chang added to the database.
+2024-08-25 22:34:48.401 | INFO     | user_manager:add_user:31 - User usdt_chang added successfully.
+2024-08-25 22:34:48.402 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:48.402 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.470 | DEBUG    | user_manager:add_user:15 - User(id=642118639, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-2199322553690552305, first_name='VadimS', last_name=None, username='VadimS077', phone=None, photo=UserProfilePhoto(photo_id=2757878555113269167, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x87lq\xc4C`\x9c~TQE!\x9f'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:48.475 | INFO     | db_manager:add_user:24 - User VadimS077 added to the database.
+2024-08-25 22:34:48.475 | INFO     | user_manager:add_user:31 - User VadimS077 added successfully.
+2024-08-25 22:34:48.475 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:34:48.476 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 22:34:48.539 | DEBUG    | user_manager:add_user:15 - User(id=6747681090, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-103940512210430495, first_name='和朱', last_name=None, username='Vtxxtr', phone=None, photo=UserProfilePhoto(photo_id=5321511067710509354, dc_id=2, has_video=True, personal=False, stripped_thumb=b'\x01\x08\x08\xad\x98<\xad\xbf.\xf1\xce{\xd1E\x156\x19'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=6080091575508012177), usernames=[], stories_max_id=None, color=None, profile_color=None)
+2024-08-25 22:34:48.541 | INFO     | db_manager:add_user:24 - User Vtxxtr added to the database.
+2024-08-25 22:34:48.542 | INFO     | user_manager:add_user:31 - User Vtxxtr added successfully.
+2024-08-25 22:34:48.543 | DEBUG    | __main__:add_user:91 - User added: True
+2024-08-25 22:35:01.535 | INFO     | __main__:check_whitelist:134 - Checking whitelist for user_id: 6094566638
+2024-08-25 22:35:01.537 | INFO     | __main__:check_whitelist:143 - User 6094566638 is authorized.
+2024-08-25 22:35:41.236 | INFO     | __main__:check_whitelist:134 - Checking whitelist for user_id: 0
+2024-08-25 22:35:41.237 | INFO     | __main__:check_whitelist:143 - User 0 is authorized.
+2024-08-25 22:35:59.364 | INFO     | db_manager:delete_user:37 - User with ID 7082991822 deleted from the database.
+2024-08-25 22:36:01.233 | INFO     | db_manager:delete_user:37 - User with ID 7168105796 deleted from the database.
+2024-08-25 22:36:03.510 | INFO     | db_manager:delete_user:37 - User with ID 6331463570 deleted from the database.
+2024-08-25 22:36:04.895 | INFO     | db_manager:delete_user:37 - User with ID 5172696533 deleted from the database.
+2024-08-25 22:36:06.010 | INFO     | db_manager:delete_user:37 - User with ID 228662731 deleted from the database.
+2024-08-25 22:36:07.166 | INFO     | db_manager:delete_user:37 - User with ID 1685203406 deleted from the database.
+2024-08-25 22:36:08.357 | INFO     | db_manager:delete_user:37 - User with ID 436188398 deleted from the database.
+2024-08-25 22:36:09.556 | INFO     | db_manager:delete_user:37 - User with ID 6854142530 deleted from the database.
+2024-08-25 22:36:10.660 | INFO     | db_manager:delete_user:37 - User with ID 6372857322 deleted from the database.
+2024-08-25 22:36:11.937 | INFO     | db_manager:delete_user:37 - User with ID 332693776 deleted from the database.
+2024-08-25 22:36:15.345 | INFO     | db_manager:delete_user:37 - User with ID 6747681090 deleted from the database.
+2024-08-25 22:36:16.415 | INFO     | db_manager:delete_user:37 - User with ID 642118639 deleted from the database.
+2024-08-25 22:36:17.248 | INFO     | db_manager:delete_user:37 - User with ID 5517401335 deleted from the database.
+2024-08-25 22:36:19.031 | INFO     | db_manager:delete_user:37 - User with ID 5330143762 deleted from the database.
+2024-08-25 22:36:20.413 | INFO     | db_manager:delete_user:37 - User with ID 963496244 deleted from the database.
+2024-08-25 22:36:21.568 | INFO     | db_manager:delete_user:37 - User with ID 362198424 deleted from the database.
+2024-08-25 22:36:22.696 | INFO     | db_manager:delete_user:37 - User with ID 6045377833 deleted from the database.
+2024-08-25 22:36:23.889 | INFO     | db_manager:delete_user:37 - User with ID 5024759515 deleted from the database.
+2024-08-25 22:36:25.096 | INFO     | db_manager:delete_user:37 - User with ID 7105983137 deleted from the database.
+2024-08-25 22:36:28.246 | INFO     | db_manager:delete_user:37 - User with ID 7164203459 deleted from the database.
+2024-08-25 22:36:30.594 | INFO     | __main__:check_whitelist:134 - Checking whitelist for user_id: 0
+2024-08-25 22:36:30.595 | INFO     | __main__:check_whitelist:143 - User 0 is authorized.
+2024-08-25 22:36:37.825 | INFO     | __main__:start_sending_messages:30 - Started sending messages to all users.
+2024-08-25 22:36:38.002 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: Да да)
+2024-08-25 22:36:38.003 | INFO     | __main__:send_messages_to_all_users:48 - Message sent to user dyorcrpto
+2024-08-25 22:36:38.126 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: Да да)
+2024-08-25 22:36:38.127 | INFO     | __main__:send_messages_to_all_users:48 - Message sent to user Fckunggbtch
+2024-08-25 22:36:38.293 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: Да да)
+2024-08-25 22:36:38.294 | INFO     | __main__:send_messages_to_all_users:48 - Message sent to user testirovkaebalkarot
+2024-08-25 22:36:41.463 | INFO     | __main__:stop_sending_messages:57 - Stopped sending messages to all users.
+2024-08-25 22:40:32.396 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:40:32.412 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:40:46.834 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:40:46.921 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-25 22:40:46.922 | ERROR    | __main__:send_messages_to_all_users:56 - Error sending messages: Random.randint() missing 1 required positional argument: 'b'
+2024-08-25 22:40:57.292 | INFO     | __main__:stop_sending_messages:63 - Stopped sending messages to all users.
+2024-08-25 22:41:27.062 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:41:27.080 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:42:25.781 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:42:25.800 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:42:46.487 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:42:46.577 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 2
+2024-08-25 22:42:46.577 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 13...
+2024-08-25 22:42:48.823 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:42:48.824 | ERROR    | __main__:start_sending_messages:38 - Error starting message sending: This event loop is already running
+2024-08-25 22:42:59.589 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user dyorcrpto
+2024-08-25 22:42:59.711 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: 2
+2024-08-25 22:42:59.711 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 13...
+2024-08-25 22:43:01.452 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:43:01.453 | ERROR    | __main__:start_sending_messages:38 - Error starting message sending: This event loop is already running
+2024-08-25 22:43:12.725 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user Fckunggbtch
+2024-08-25 22:43:12.877 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 2
+2024-08-25 22:43:12.878 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 13...
+2024-08-25 22:43:25.879 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user testirovkaebalkarot
+2024-08-25 22:43:33.457 | INFO     | __main__:stop_sending_messages:63 - Stopped sending messages to all users.
+2024-08-25 22:43:36.044 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:43:36.125 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 3
+2024-08-25 22:43:36.126 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 9...
+2024-08-25 22:43:45.136 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user dyorcrpto
+2024-08-25 22:43:45.255 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: 3
+2024-08-25 22:43:45.255 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 5...
+2024-08-25 22:43:50.261 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user Fckunggbtch
+2024-08-25 22:43:50.499 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 3
+2024-08-25 22:43:50.499 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 8...
+2024-08-25 22:43:58.506 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user testirovkaebalkarot

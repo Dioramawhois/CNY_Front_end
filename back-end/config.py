@@ -11,4 +11,4 @@ API_HASH = '13845a8fe6921e3d932dc16e4b4fc604'
 TELEGRAM_BOT_TOKEN = '7501987168:AAFkl7ZwRFmzCfRC92rF5qbRmLln6pOUZOo'
 WEB_APP_URL = 'https://gasbot.ru'
 
-Sleep = [10,30]
+Sleep = [5,15]

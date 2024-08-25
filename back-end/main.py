@@ -7,6 +7,8 @@ from utils.logger import logger
 import asyncio
 from threading import Thread
 from telegram_bot import start_bot  # Импортируем функцию запуска бота
+import random
+from config import Sleep
 
 app = Flask(__name__)
 
@@ -45,6 +47,10 @@ async def send_messages_to_all_users(message):
                 break
             identifier = user[1] if user[1] else user[0]  # Используем username, если он доступен, иначе user_id
             await chat_manager.send_message(identifier, message)
+            # Генерируем случайное число между 0 и 30
+            random_sleep = random.randint(Sleep[0], Sleep[1])
+            logger.debug(f'Ожидание {random_sleep}...')
+            await asyncio.sleep(random_sleep)
             logger.info(f"Message sent to user {identifier}")
     except Exception as e:
         logger.error(f"Error sending messages: {e}")
