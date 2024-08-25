@@ -70,6 +70,12 @@ def add_user():
             identifiers = identifiers.split()
         
         logger.debug(identifiers)
+        
+        try:
+            loop = asyncio.get_event_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
 
         for identifier in identifiers:
             if identifier.startswith('https://t.me/'):
@@ -83,7 +89,6 @@ def add_user():
                     logger.error(f"Invalid identifier format: {identifier}")
                     continue
 
-            # Используем глобальный event loop для добавления пользователя
             result = loop.run_until_complete(user_manager.add_user(db, identifier))
             logger.debug(f"User added: {result}")
         
@@ -91,7 +96,7 @@ def add_user():
     except Exception as e:
         logger.error(f"Unexpected error: {e}")
         return jsonify({"status": "error", "message": str(e)}), 500
-        
+
 @app.route('/api/users/list', methods=['GET'])
 def list_users():
     try:
@@ -112,7 +117,7 @@ def delete_user():
     except Exception as e:
         logger.exception(f"Exception occurred while deleting user: {e}")
         return jsonify({"status": "failed", "error": str(e)}), 500
-    
+
 @app.route('/api/users/delete-all', methods=['POST'])
 def delete_all_users():
     try:
@@ -125,6 +130,5 @@ def delete_all_users():
         return jsonify({"status": "failed", "error": str(e)}), 500
 
 if __name__ == '__main__':
-    # Инициализация Telegram клиента в глобальном event loop
     loop.run_until_complete(telegram_client.start())
     app.run(host='0.0.0.0', port=5000)

@@ -1,5 +1,3 @@
-# db_manager.py
-
 import psycopg2
 from config import DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD
 from utils.logger import logger
@@ -25,27 +23,18 @@ class Database:
             self.connection.commit()
             logger.info(f"User {username} added to the database.")
         except Exception as e:
-            logger.error(f"Error adding user {username}: {e}")
+            logger.error(f"Error adding user {username} to the database: {e}")
             self.connection.rollback()
 
     def list_users(self):
-        try:
-            self.cursor.execute("SELECT * FROM users ORDER BY userid ASC")
-            return self.cursor.fetchall()
-        except Exception as e:
-            logger.error(f"Error fetching users: {e}")
-            return []
+        self.cursor.execute("SELECT * FROM users")
+        return self.cursor.fetchall()
 
     def delete_user(self, user_id):
         try:
             self.cursor.execute("DELETE FROM users WHERE userid = %s", (user_id,))
             self.connection.commit()
-            logger.info(f"User {user_id} deleted from the database.")
+            logger.info(f"User with ID {user_id} deleted from the database.")
         except Exception as e:
-            logger.error(f"Error deleting user {user_id}: {e}")
+            logger.error(f"Error deleting user with ID {user_id}: {e}")
             self.connection.rollback()
-
-    def close(self):
-        self.cursor.close()
-        self.connection.close()
-        logger.info("Database connection closed")
