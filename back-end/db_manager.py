@@ -38,3 +38,13 @@ class Database:
         except Exception as e:
             logger.error(f"Error deleting user with ID {user_id}: {e}")
             self.connection.rollback()
+
+    def is_user_in_whitelist(self, user_id):
+        try:
+            self.cursor.execute("SELECT * FROM whitelist WHERE user_id = %s", (user_id,))
+            result = self.cursor.fetchone()
+            return result is not None
+        except Exception as e:
+            logger.error(f"Error checking whitelist for user {user_id}: {e}")
+            return False
+

@@ -1,10 +1,16 @@
+# main.py
+
 from flask import Flask, request, jsonify
+from config import Sleep
 from db_manager import Database
 from user_manager import UserManager
 from chat_manager import ChatManager
 from telegram_client import telegram_client
 from utils.logger import logger
 import asyncio
+from threading import Thread
+from telegram_bot import start_bot  # Импортируем функцию запуска бота
+import random
 
 app = Flask(__name__)
 
@@ -129,6 +135,33 @@ def delete_all_users():
         logger.exception(f"Exception occurred while deleting all users: {e}")
         return jsonify({"status": "failed", "error": str(e)}), 500
 
+@app.route('/api/check-whitelist', methods=['GET'])
+def check_whitelist():
+    try:
+        user_id = request.args.get('user_id')
+        logger.info(f"Checking whitelist for user_id: {user_id}")
+
+        if user_id is None:
+            return jsonify({"status": "failed", "error": "No user_id provided"}), 400
+
+        # Используем готовый метод из db_manager.py
+        is_authorized = db.is_user_in_whitelist(user_id)
+
+        if is_authorized:
+            logger.info(f"User {user_id} is authorized.")
+            return jsonify({"status": "success", "authorized": True}), 200
+        else:
+            logger.info(f"User {user_id} is not authorized.")
+            return jsonify({"status": "success", "authorized": False}), 200
+
+    except Exception as e:
+        logger.error(f"Error checking whitelist for user {user_id}: {e}")
+        return jsonify({"status": "failed", "error": str(e)}), 500
+
 if __name__ == '__main__':
+    # Запускаем телеграмм бота в отдельном потоке
+    bot_thread = Thread(target=start_bot)
+    bot_thread.start()
+
     loop.run_until_complete(telegram_client.start())
     app.run(host='0.0.0.0', port=5000)

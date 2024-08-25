@@ -624,3 +624,90 @@ DETAIL:  Key (userid)=(2223559442) already exists.
 2024-08-25 17:28:24.468 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user Fckunggbtch
 2024-08-25 17:28:24.590 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: KillaTrilla
 2024-08-25 17:28:24.590 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user testirovkaebalkarot
+2024-08-25 19:45:36.380 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 19:49:41.014 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:03:25.053 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:05:38.534 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 6094566638: value "6094566638" is out of range for type integer
+LINE 1: SELECT * FROM whitelist WHERE userid = '6094566638'
+                                               ^
+
+2024-08-25 20:05:39.611 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 6094566638: current transaction is aborted, commands ignored until end of transaction block
+
+2024-08-25 20:08:06.890 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:08:06.915 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:10:20.494 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:10:20.513 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:10:37.365 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:10:37.383 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:10:59.391 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:10:59.407 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:11:14.468 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:11:14.485 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:15:22.848 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:15:22.867 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:15:30.595 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 6094566638: column "userid" does not exist
+LINE 1: SELECT * FROM whitelist WHERE userid = 6094566638
+                                      ^
+HINT:  Perhaps you meant to reference the column "whitelist.user_id".
+
+2024-08-25 20:15:56.365 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:15:56.381 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:18:46.701 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:18:46.722 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:18:56.496 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:18:56.498 | ERROR    | __main__:check_whitelist:156 - Error checking whitelist: column "userid" does not exist
+LINE 1: SELECT COUNT(*) FROM whitelist WHERE userid = '6094566638'
+                                             ^
+HINT:  Perhaps you meant to reference the column "whitelist.user_id".
+
+2024-08-25 20:21:14.377 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:21:14.394 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:21:23.637 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:21:23.641 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:21:35.528 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:21:35.529 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:23:18.769 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:23:18.772 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:23:25.201 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:23:25.202 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:25:05.366 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:25:05.385 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 20:26:31.240 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 241
+2024-08-25 20:26:31.245 | INFO     | __main__:check_whitelist:152 - User 241 is not authorized.
+2024-08-25 20:26:45.831 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:26:45.832 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:35:28.231 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:35:28.237 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:42:46.179 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:42:46.186 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:48:41.800 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:48:41.805 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:51:08.254 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:51:08.258 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:52:03.148 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:52:03.149 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:53:29.575 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 20:53:29.579 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 20:58:27.215 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 20:58:27.493 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: Test
+2024-08-25 20:58:27.494 | INFO     | __main__:send_messages_to_all_users:50 - Message sent to user dyorcrpto
+2024-08-25 20:58:27.697 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: Test
+2024-08-25 20:58:27.698 | INFO     | __main__:send_messages_to_all_users:50 - Message sent to user Fckunggbtch
+2024-08-25 20:58:27.882 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: Test
+2024-08-25 20:58:27.884 | INFO     | __main__:send_messages_to_all_users:50 - Message sent to user testirovkaebalkarot
+2024-08-25 20:59:09.323 | INFO     | __main__:stop_sending_messages:59 - Stopped sending messages to all users.
+2024-08-25 21:01:23.412 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:01:23.429 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:01:33.917 | INFO     | __main__:start_sending_messages:34 - Started sending messages to all users.
+2024-08-25 21:01:34.007 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: Tewts
+2024-08-25 21:01:34.007 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user dyorcrpto
+2024-08-25 21:01:34.158 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: Tewts
+2024-08-25 21:01:34.159 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user Fckunggbtch
+2024-08-25 21:01:34.247 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: Tewts
+2024-08-25 21:01:34.248 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user testirovkaebalkarot
+2024-08-25 21:02:22.248 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:02:22.267 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:02:37.984 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 6094566638
+2024-08-25 21:02:37.986 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
+2024-08-25 21:03:38.324 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:03:38.345 | INFO     | db_manager:__init__:15 - Database connection established
