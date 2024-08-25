@@ -5,12 +5,9 @@ const TelegramLogin = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Получаем user_id из параметра URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const userId = urlParams.get('user_id');
+    const userId = new URLSearchParams(window.location.search).get('user_id');
 
     if (userId) {
-      // Проверка user_id через API
       fetch(`/api/check-whitelist?user_id=${userId}`)
         .then(response => response.json())
         .then(data => {

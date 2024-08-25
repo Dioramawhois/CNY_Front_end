@@ -1,53 +1,50 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 import MessageSender from './components/MessageSender';
 import UserManager from './components/UserManager';
-import TelegramLogin from './components/TelegramLogin';
 
 function App() {
   const [isAuthorized, setIsAuthorized] = useState(false);
-  const [currentView, setCurrentView] = useState('message-sender');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Проверка авторизации при загрузке приложения
-    const checkAuthorization = async () => {
-      const userId = new URLSearchParams(window.location.search).get('user_id');
-      if (!userId) {
-        setIsAuthorized(false);
-        return;
-      }
-      try {
-        const response = await fetch(`/api/check-whitelist?user_id=${userId}`);
-        const data = await response.json();
-        setIsAuthorized(data.authorized);
-      } catch (error) {
-        console.error('Error checking authorization:', error);
-        setIsAuthorized(false);
-      }
-    };
+    // Получаем user_id из параметра URL
+    const userId = new URLSearchParams(window.location.search).get('user_id');
+    
+    if (!userId) {
+      setLoading(false);
+      return;
+    }
 
-    checkAuthorization();
+    // Проверка user_id через API
+    fetch(`/api/check-whitelist?user_id=${userId}`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success' && data.authorized) {
+          setIsAuthorized(true);
+        }
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching whitelist status:', error);
+        setLoading(false);
+      });
   }, []);
 
-  const handleNavigation = (view) => {
-    setCurrentView(view);
-  };
-
-  if (!isAuthorized) {
-    return <TelegramLogin />;
+  if (loading) {
+    return <div>Loading...</div>;
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Message Sender</h1>
-        <div className="menu">
-          <button onClick={() => handleNavigation('message-sender')}>Message Sender</button>
-          <button onClick={() => handleNavigation('user-management')}>User Management</button>
+    <div>
+      {isAuthorized ? (
+        <div>
+          {/* Здесь ваш основной контент */}
+          <MessageSender />
+          <UserManager />
         </div>
-      </header>
-      {currentView === 'message-sender' && <MessageSender />}
-      {currentView === 'user-management' && <UserManager />}
+      ) : (
+        <div>Вы не авторизованы для входа в эту страницу.</div>
+      )}
     </div>
   );
 }

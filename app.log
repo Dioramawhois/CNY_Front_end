@@ -713,3 +713,15 @@ HINT:  Perhaps you meant to reference the column "whitelist.user_id".
 2024-08-25 21:03:38.345 | INFO     | db_manager:__init__:15 - Database connection established
 2024-08-25 21:06:19.691 | INFO     | db_manager:__init__:15 - Database connection established
 2024-08-25 21:06:19.710 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:19:51.982 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 6094566638
+2024-08-25 21:19:51.988 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
+2024-08-25 21:20:02.622 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 6094566638
+2024-08-25 21:20:02.623 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
+2024-08-25 21:21:39.407 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 6094566638
+2024-08-25 21:21:39.412 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
+2024-08-25 21:21:57.216 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 6094566638
+2024-08-25 21:21:57.217 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
+2024-08-25 21:33:42.757 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 6094566638
+2024-08-25 21:33:42.763 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
+2024-08-25 21:33:50.889 | INFO     | __main__:check_whitelist:142 - Checking whitelist for user_id: 609456638
+2024-08-25 21:33:50.890 | INFO     | __main__:check_whitelist:154 - User 609456638 is not authorized.
