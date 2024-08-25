@@ -1,8 +1,10 @@
 # user_manager.py
 
 from utils.logger import logger
-from telethon.errors import UsernameInvalidError, UserNotMutualContactError, ChannelPrivateError, ChannelInvalidError
-from telethon.tl.types import User, Channel  # Добавьте этот импорт
+from telethon.errors import (
+    UsernameInvalidError, UserNotMutualContactError,
+    ChannelPrivateError, ChannelInvalidError
+)
 from datetime import datetime
 
 class UserManager:
@@ -12,33 +14,34 @@ class UserManager:
     async def add_user(self, db, identifier):
         try:
             logger.debug('Work 1\n')
+
             # Получаем объект пользователя или чата
-            user = await self.telegram_client.get_entity(identifier)
-            logger.debug(f'{user}\n')
-            
-            user_id = user.id
-            username = user.username or "N/A"
-            first_name = user.first_name or "N/A"
+            entity = await self.telegram_client.get_entity(identifier)
+            logger.debug(entity)
 
-            # Определяем тип пользователя
-            if isinstance(user, User):
-                user_type = "User" if not user.bot else "Bot"
-            elif isinstance(user, Channel):
-                user_type = "Channel"
+            if hasattr(entity, 'first_name'):
+                # Это пользователь
+                user_id = entity.id
+                username = entity.username or "N/A"
+                first_name = entity.first_name or "N/A"
+                user_type = "User"
             else:
+                # Это чат
+                user_id = entity.id
+                username = entity.username or "N/A"
+                first_name = entity.title or "N/A"  # Используем title вместо first_name
                 user_type = "Chat"
-            date_added = datetime.now()
 
-            db.add_user(user_id, username, first_name, date_added, user_type)
-            logger.info(f"User {username} added successfully.")
+            db.add_user(user_id, username, first_name, datetime.now(), user_type)
+            logger.info(f"{user_type} {username} added successfully.")
             return True
+
         except (UsernameInvalidError, UserNotMutualContactError, ChannelPrivateError, ChannelInvalidError) as e:
-            logger.error(f"Error adding user {identifier}: {e}")
+            logger.error(f"Error adding {identifier}: {e}")
             return False
         except Exception as e:
-            logger.error(f"Unexpected error adding user {identifier}: {e}")
+            logger.error(f"Unexpected error adding {identifier}: {e}")
             return False
-
 
     def list_users(self, db):
         return db.list_users()

@@ -289,3 +289,157 @@ https://t.me/Yanik_Tems
 2024-08-25 12:04:36.150 | INFO     | db_manager:add_user:26 - User Yanik_Tems added to the database.
 2024-08-25 12:04:36.151 | INFO     | user_manager:add_user:33 - User Yanik_Tems added successfully.
 2024-08-25 12:04:36.151 | DEBUG    | __main__:add_user:46 - User added: True
+2024-08-25 12:09:26.307 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:09:37.521 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:09:37.669 | ERROR    | chat_manager:send_message:14 - Failed to send message to 882392195: Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:09:37.670 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:09:37.865 | ERROR    | chat_manager:send_message:14 - Failed to send message to 5146524922: Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:09:37.866 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:11:22.141 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:11:33.353 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:11:37.364 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:11:37.475 | ERROR    | chat_manager:send_message:15 - Failed to send message to 882392195: Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:11:37.475 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:11:37.581 | ERROR    | chat_manager:send_message:15 - Failed to send message to 5146524922: Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:11:37.581 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:12:05.383 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:12:06.765 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:12:23.366 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:12:23.451 | ERROR    | chat_manager:send_message:15 - Failed to send message to 882392195: Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:12:23.452 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:12:23.533 | ERROR    | chat_manager:send_message:15 - Failed to send message to 5146524922: Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:12:23.533 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:12:34.502 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:15:07.894 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:15:22.240 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:15:22.316 | ERROR    | chat_manager:send_message:16 - Entity not found or error occurred for user_id: 882392195 - Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:15:22.317 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:15:22.384 | ERROR    | chat_manager:send_message:16 - Entity not found or error occurred for user_id: 5146524922 - Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:15:22.386 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:21:19.577 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:21:35.229 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:21:35.401 | ERROR    | chat_manager:send_message:17 - Entity not found or error occurred for user_id: 882392195 - Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:21:35.401 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:21:35.592 | ERROR    | chat_manager:send_message:17 - Entity not found or error occurred for user_id: 5146524922 - Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:21:35.593 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:23:46.493 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:23:56.165 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:23:56.234 | ERROR    | chat_manager:send_message:17 - Entity not found or error occurred for user_id: 882392195 - Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:23:56.234 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:23:56.295 | ERROR    | chat_manager:send_message:17 - Entity not found or error occurred for user_id: 5146524922 - Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:23:56.295 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:26:12.485 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:26:18.421 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:26:27.252 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:26:27.258 | ERROR    | chat_manager:send_message:18 - Input entity not found for user_id: 882392195. Error: 'TelegramClientWrapper' object has no attribute 'get_input_entity'
+2024-08-25 12:26:27.258 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:26:27.259 | ERROR    | chat_manager:send_message:18 - Input entity not found for user_id: 5146524922. Error: 'TelegramClientWrapper' object has no attribute 'get_input_entity'
+2024-08-25 12:26:27.259 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:27:25.756 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:27:33.426 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:27:34.498 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:27:34.572 | ERROR    | chat_manager:send_message:18 - Input entity not found for user_id: 882392195. Error: Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:27:34.572 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:27:34.634 | ERROR    | chat_manager:send_message:18 - Input entity not found for user_id: 5146524922. Error: Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:27:34.635 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:28:25.451 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:28:33.771 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:28:35.165 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:28:35.236 | ERROR    | chat_manager:send_message:19 - Input entity not found for user_id: 882392195. Error: Could not find the input entity for PeerUser(user_id=882392195) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:28:35.237 | ERROR    | chat_manager:send_message:27 - Failed to add user 882392195 to contacts. Error: AddContactRequest.__init__() missing 3 required positional arguments: 'first_name', 'last_name', and 'phone'
+2024-08-25 12:28:35.237 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 882392195
+2024-08-25 12:28:35.320 | ERROR    | chat_manager:send_message:19 - Input entity not found for user_id: 5146524922. Error: Could not find the input entity for PeerUser(user_id=5146524922) (PeerUser). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2024-08-25 12:28:35.321 | ERROR    | chat_manager:send_message:27 - Failed to add user 5146524922 to contacts. Error: AddContactRequest.__init__() missing 3 required positional arguments: 'first_name', 'last_name', and 'phone'
+2024-08-25 12:28:35.321 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user 5146524922
+2024-08-25 12:32:13.455 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:32:25.631 | INFO     | __main__:delete_all_users:122 - All users deleted from the database.
+2024-08-25 12:32:30.560 | DEBUG    | __main__:add_user:65 - {'users': '@artypatrick'}
+2024-08-25 12:32:30.561 | DEBUG    | __main__:add_user:72 - ['@artypatrick']
+2024-08-25 12:32:30.561 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:32:30.837 | DEBUG    | user_manager:add_user:17 - User(id=5146524922, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-7609618253060389731, first_name='Arty', last_name='Patrick', username='artypatrick', phone=None, photo=UserProfilePhoto(photo_id=5438403735157063986, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xa9\xf6\x83\x1b,\x8a@a\xe9E\x14S\x03'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 12:32:30.840 | INFO     | db_manager:add_user:26 - User artypatrick added to the database.
+2024-08-25 12:32:30.841 | INFO     | user_manager:add_user:33 - User artypatrick added successfully.
+2024-08-25 12:32:30.841 | DEBUG    | __main__:add_user:89 - User added: True
+2024-08-25 12:36:40.948 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:36:52.225 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:36:52.296 | ERROR    | chat_manager:send_message:25 - Failed to send message to Arty: No user has "arty" as username
+2024-08-25 12:36:52.296 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user Arty
+2024-08-25 12:37:00.839 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:39:01.507 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:39:13.650 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:39:13.884 | ERROR    | chat_manager:send_message:25 - Failed to send message to Arty: No user has "arty" as username
+2024-08-25 12:39:13.884 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user Arty
+2024-08-25 12:40:45.451 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:40:52.976 | INFO     | __main__:stop_sending_messages:55 - Stopped sending messages to all users.
+2024-08-25 12:40:54.565 | INFO     | __main__:start_sending_messages:28 - Started sending messages to all users.
+2024-08-25 12:40:55.213 | INFO     | chat_manager:send_message:17 - Message sent to artypatrick: Здарова заебал
+2024-08-25 12:40:55.214 | INFO     | __main__:send_messages_to_all_users:46 - Message sent to user artypatrick
+2024-08-25 12:49:29.652 | DEBUG    | __main__:add_user:65 - {'users': 'https://t.me/dyorcrpto'}
+2024-08-25 12:49:29.653 | DEBUG    | __main__:add_user:72 - ['https://t.me/dyorcrpto']
+2024-08-25 12:49:29.655 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:49:29.923 | DEBUG    | user_manager:add_user:17 - User(id=6094566638, is_self=False, contact=True, mutual_contact=True, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=9117499309051380128, first_name='Нет', last_name=None, username='dyorcrpto', phone='79850457684', photo=UserProfilePhoto(photo_id=5417941591835927189, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x88\xb6\x18rz\x9c\x8cq\xedE\x14WJvlg'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5256067997730098754), usernames=[], stories_max_id=None, color=PeerColor(color=2, background_emoji_id=5361949382641990734), profile_color=PeerColor(color=10, background_emoji_id=5298907998700189550))
+
+2024-08-25 12:49:29.925 | INFO     | db_manager:add_user:26 - User dyorcrpto added to the database.
+2024-08-25 12:49:29.926 | INFO     | user_manager:add_user:33 - User dyorcrpto added successfully.
+2024-08-25 12:49:29.926 | DEBUG    | __main__:add_user:89 - User added: True
+2024-08-25 12:49:51.522 | DEBUG    | __main__:add_user:65 - {'users': 'https://t.me/Fckunggbtch'}
+2024-08-25 12:49:51.523 | DEBUG    | __main__:add_user:72 - ['https://t.me/Fckunggbtch']
+2024-08-25 12:49:51.524 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:49:51.591 | DEBUG    | user_manager:add_user:17 - User(id=300319322, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-6807554584246947178, first_name='Fckunggbtch', last_name=None, username='Fckunggbtch', phone=None, photo=UserProfilePhoto(photo_id=1289861666803132346, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x8f\x1f\xbc\xdc]\xf3\x9c\x05\x1d1E\x14U"Y'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 12:49:51.595 | INFO     | db_manager:add_user:26 - User Fckunggbtch added to the database.
+2024-08-25 12:49:51.596 | INFO     | user_manager:add_user:33 - User Fckunggbtch added successfully.
+2024-08-25 12:49:51.596 | DEBUG    | __main__:add_user:89 - User added: True
+2024-08-25 12:49:51.731 | DEBUG    | __main__:add_user:65 - {'users': 'https://t.me/Fckunggbtch'}
+2024-08-25 12:49:51.732 | DEBUG    | __main__:add_user:72 - ['https://t.me/Fckunggbtch']
+2024-08-25 12:49:51.732 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:49:51.800 | DEBUG    | user_manager:add_user:17 - User(id=300319322, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-6807554584246947178, first_name='Fckunggbtch', last_name=None, username='Fckunggbtch', phone=None, photo=UserProfilePhoto(photo_id=1289861666803132346, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x8f\x1f\xbc\xdc]\xf3\x9c\x05\x1d1E\x14U"Y'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 12:49:51.802 | ERROR    | db_manager:add_user:28 - Error adding user Fckunggbtch: duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (userid)=(300319322) already exists.
+
+2024-08-25 12:49:51.802 | INFO     | user_manager:add_user:33 - User Fckunggbtch added successfully.
+2024-08-25 12:49:51.803 | DEBUG    | __main__:add_user:89 - User added: True
+2024-08-25 12:50:08.398 | DEBUG    | __main__:add_user:65 - {'users': 'https://t.me/testsuka12'}
+2024-08-25 12:50:08.398 | DEBUG    | __main__:add_user:72 - ['https://t.me/testsuka12']
+2024-08-25 12:50:08.398 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:50:08.478 | DEBUG    | user_manager:add_user:17 - Channel(id=2249087441, title='Test', photo=ChatPhotoEmpty(), date=datetime.datetime(2024, 8, 14, 13, 30, 16, tzinfo=datetime.timezone.utc), creator=False, left=True, broadcast=True, verified=False, megagroup=False, restricted=False, signatures=False, min=False, scam=False, has_link=False, has_geo=False, slowmode_enabled=False, call_active=False, call_not_empty=False, fake=False, gigagroup=False, noforwards=False, join_to_send=False, join_request=False, forum=False, stories_hidden=False, stories_hidden_min=True, stories_unavailable=True, access_hash=-5949074798286914581, username='testsuka12', restriction_reason=[], admin_rights=None, banned_rights=None, default_banned_rights=None, participants_count=None, usernames=[], stories_max_id=None, color=None, profile_color=None, emoji_status=None, level=None)
+
+2024-08-25 12:50:08.479 | ERROR    | user_manager:add_user:39 - Unexpected error adding user testsuka12: 'Channel' object has no attribute 'first_name'
+2024-08-25 12:50:08.479 | DEBUG    | __main__:add_user:89 - User added: False
+2024-08-25 12:51:58.004 | INFO     | db_manager:delete_user:43 - User 6094566638 deleted from the database.
+2024-08-25 12:52:01.352 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:52:07.308 | DEBUG    | __main__:add_user:65 - {'users': '@dyorcrpto'}
+2024-08-25 12:52:07.309 | DEBUG    | __main__:add_user:72 - ['@dyorcrpto']
+2024-08-25 12:52:07.309 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 12:52:07.388 | DEBUG    | user_manager:add_user:15 - User(id=6094566638, is_self=False, contact=True, mutual_contact=True, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=9117499309051380128, first_name='Нет', last_name=None, username='dyorcrpto', phone='79850457684', photo=UserProfilePhoto(photo_id=5417941591835927189, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x88\xb6\x18rz\x9c\x8cq\xedE\x14WJvlg'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5256067997730098754), usernames=[], stories_max_id=None, color=PeerColor(color=2, background_emoji_id=5361949382641990734), profile_color=PeerColor(color=10, background_emoji_id=5298907998700189550))
+2024-08-25 12:52:07.391 | INFO     | db_manager:add_user:26 - User dyorcrpto added to the database.
+2024-08-25 12:52:07.392 | INFO     | user_manager:add_user:31 - User dyorcrpto added successfully.
+2024-08-25 12:52:07.392 | DEBUG    | __main__:add_user:89 - User added: True
+2024-08-25 12:54:18.191 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:54:30.754 | DEBUG    | __main__:add_user:66 - {'users': 'https://t.me/testsuka12'}
+2024-08-25 12:54:30.755 | DEBUG    | __main__:add_user:73 - ['https://t.me/testsuka12']
+2024-08-25 12:54:30.756 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 12:54:30.757 | ERROR    | user_manager:add_user:37 - Unexpected error adding user testsuka12: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-25 12:54:30.757 | DEBUG    | __main__:add_user:94 - User added: False
+2024-08-25 12:57:20.533 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:57:29.204 | DEBUG    | __main__:add_user:77 - {'users': 'https://t.me/testsuka12'}
+2024-08-25 12:57:29.204 | DEBUG    | __main__:add_user:84 - ['https://t.me/testsuka12']
+2024-08-25 13:38:44.671 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 13:38:56.880 | DEBUG    | __main__:add_user:77 - {'users': 'https://t.me/testsuka12'}
+2024-08-25 13:38:56.881 | DEBUG    | __main__:add_user:84 - ['https://t.me/testsuka12']
+2024-08-25 13:42:48.508 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 13:43:14.633 | DEBUG    | __main__:add_user:77 - {'users': 'https://t.me/testsuka12'}
+2024-08-25 13:43:14.633 | DEBUG    | __main__:add_user:84 - ['https://t.me/testsuka12']
+2024-08-25 13:43:17.363 | DEBUG    | __main__:add_user:77 - {'users': 'https://t.me/testsuka12'}
+2024-08-25 13:43:17.364 | DEBUG    | __main__:add_user:84 - ['https://t.me/testsuka12']
+2024-08-25 13:46:23.756 | DEBUG    | __main__:add_user:77 - {'users': 'https://t.me/testirovkaebalkarot'}
+2024-08-25 13:46:23.757 | DEBUG    | __main__:add_user:84 - ['https://t.me/testirovkaebalkarot']

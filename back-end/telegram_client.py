@@ -1,5 +1,3 @@
-# telegram_client.py
-
 from telethon import TelegramClient
 from config import API_ID, API_HASH
 
@@ -13,6 +11,9 @@ class TelegramClientWrapper:
 
     async def get_entity(self, username):
         return await self.client.get_entity(username)
+
+    async def get_input_entity(self, identifier):
+        return await self.client.get_input_entity(identifier)  # Добавляем этот метод
 
     async def send_message(self, user_id, message):
         await self.client.send_message(user_id, message)

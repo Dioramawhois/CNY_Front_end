@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/MessageSender.css';
 
 const MessageSender = () => {
   const [message, setMessage] = useState('');
@@ -10,6 +11,11 @@ const MessageSender = () => {
   };
 
   const sendMessage = async () => {
+    if (!message.trim()) {
+      setLog((prevLog) => [...prevLog, 'Message cannot be empty.']);
+      return;
+    }
+
     try {
       const response = await fetch('/api/start', {
         method: 'POST',
@@ -22,6 +28,7 @@ const MessageSender = () => {
       if (response.ok) {
         const data = await response.json();
         setLog((prevLog) => [...prevLog, `Message sent to users: ${data.echo}`]);
+        setMessage(''); // Clear the input after sending
         setIsSending(true);
       } else {
         setLog((prevLog) => [...prevLog, 'Error sending message']);
@@ -49,7 +56,7 @@ const MessageSender = () => {
   };
 
   return (
-    <div>
+    <div className="message-sender">
       <h2>Message Sender</h2>
       <input
         type="text"
@@ -57,17 +64,21 @@ const MessageSender = () => {
         onChange={handleMessageChange}
         placeholder="Enter your message here"
       />
-      <button onClick={sendMessage} disabled={isSending}>
-        Send Message
-      </button>
-      <button onClick={stopSending} disabled={!isSending}>
-        Stop Sending
-      </button>
-      <div className="log">
+      <div className="button-group">
+        <button onClick={sendMessage} disabled={isSending}>
+          {isSending ? 'Sending...' : 'Send Message'}
+        </button>
+        <button onClick={stopSending} disabled={!isSending}>
+          Stop Sending
+        </button>
+      </div>
+      <div className="log-container">
         <h3>Log</h3>
-        {log.map((entry, index) => (
-          <p key={index}>{entry}</p>
-        ))}
+        <div className="log-messages">
+          {log.map((entry, index) => (
+            <p key={index} className="log-message">{entry}</p>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,49 @@
+.message-sender {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.message-sender input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.message-sender button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00DDEB;
+  transition: background-color 0.3s ease;
+}
+
+.message-sender button[disabled] {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
 .message-sender .log-container {
   margin-top: 20px;
   padding: 10px;
   background-color: #2c2f33;
   border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; /* Центрируем лог на странице */
 }
 
 .message-sender .log-container h3 {
