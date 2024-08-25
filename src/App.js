@@ -1,50 +1,60 @@
 import React, { useState, useEffect } from 'react';
 import MessageSender from './components/MessageSender';
 import UserManager from './components/UserManager';
+import TelegramLogin from './components/TelegramLogin';
+import './styles/App.css';
 
 function App() {
+  const [view, setView] = useState('message-sender');
   const [isAuthorized, setIsAuthorized] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true); // New state for checking auth
 
   useEffect(() => {
-    // Получаем user_id из параметра URL
-    const userId = new URLSearchParams(window.location.search).get('user_id');
-    
-    if (!userId) {
-      setLoading(false);
-      return;
-    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('user_id');
 
-    // Проверка user_id через API
-    fetch(`/api/check-whitelist?user_id=${userId}`)
-      .then(response => response.json())
-      .then(data => {
-        if (data.status === 'success' && data.authorized) {
-          setIsAuthorized(true);
-        }
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error fetching whitelist status:', error);
-        setLoading(false);
-      });
+    if (userId) {
+      fetch(`/api/check-whitelist?user_id=${userId}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.authorized) {
+            setIsAuthorized(true);
+          } else {
+            setIsAuthorized(false);
+          }
+          setIsCheckingAuth(false); // Finish checking
+        })
+        .catch(error => {
+          console.error('Error checking whitelist:', error);
+          setIsCheckingAuth(false);
+        });
+    } else {
+      setIsAuthorized(false);
+      setIsCheckingAuth(false);
+    }
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
+  if (isCheckingAuth) {
+    return <div>Checking authorization...</div>; // New loading state
+  }
+
+  if (!isAuthorized) {
+    return <TelegramLogin />; // Redirect to a login component
   }
 
   return (
-    <div>
-      {isAuthorized ? (
-        <div>
-          {/* Здесь ваш основной контент */}
-          <MessageSender />
-          <UserManager />
-        </div>
-      ) : (
-        <div>Вы не авторизованы для входа в эту страницу.</div>
-      )}
+    <div className="App">
+      <header className="App-header">
+        <h1>Umbrella CNY bot</h1>
+        <nav>
+          <button className={view === 'message-sender' ? 'active' : ''} onClick={() => setView('message-sender')}>Message Sender</button>
+          <button className={view === 'user-management' ? 'active' : ''} onClick={() => setView('user-management')}>User Management</button>
+        </nav>
+      </header>
+      <main>
+        {view === 'message-sender' && <MessageSender />}
+        {view === 'user-management' && <UserManager />}
+      </main>
     </div>
   );
 }
