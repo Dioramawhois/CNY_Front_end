@@ -711,3 +711,5 @@ HINT:  Perhaps you meant to reference the column "whitelist.user_id".
 2024-08-25 21:02:37.986 | INFO     | __main__:check_whitelist:151 - User 6094566638 is authorized.
 2024-08-25 21:03:38.324 | INFO     | db_manager:__init__:15 - Database connection established
 2024-08-25 21:03:38.345 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:06:19.691 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 21:06:19.710 | INFO     | db_manager:__init__:15 - Database connection established
