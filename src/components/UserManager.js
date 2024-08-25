@@ -12,8 +12,23 @@ const UserManager = () => {
   const fetchUsers = async () => {
     try {
       const response = await fetch('/api/users/list');
-      const data = await response.json();
-      setUsers(data);
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Fetched users:', data); // Логируем данные пользователей
+
+        // Проверка структуры данных и преобразование вложенного массива в плоский массив объектов
+        const normalizedData = data.map(userArray => ({
+          userid: userArray[0],
+          username: userArray[1],
+          user_firstname: userArray[2],
+          date_added: userArray[3],
+          type: userArray[4]
+        }));
+
+        setUsers(normalizedData);
+      } else {
+        console.error('Failed to fetch users:', response.statusText);
+      }
     } catch (error) {
       console.error('Error fetching users:', error);
     }
@@ -21,7 +36,7 @@ const UserManager = () => {
 
   const handleAddUsers = async () => {
     if (!newUsers.trim()) return;
-    
+
     try {
       const response = await fetch('/api/users/add', {
         method: 'POST',
@@ -32,10 +47,11 @@ const UserManager = () => {
       });
 
       if (response.ok) {
+        console.log('Users added successfully'); // Логирование успешного добавления
         setNewUsers('');
         fetchUsers();
       } else {
-        console.error('Failed to add users');
+        console.error('Failed to add users:', response.statusText);
       }
     } catch (error) {
       console.error('Error adding users:', error);
@@ -53,9 +69,10 @@ const UserManager = () => {
       });
 
       if (response.ok) {
+        console.log(`User ${userId} deleted successfully`); // Логирование успешного удаления
         fetchUsers();
       } else {
-        console.error('Failed to delete user');
+        console.error('Failed to delete user:', response.statusText);
       }
     } catch (error) {
       console.error('Error deleting user:', error);
@@ -64,14 +81,19 @@ const UserManager = () => {
 
   const handleDeleteAllUsers = async () => {
     try {
-      // Добавьте запрос к серверу для удаления всех пользователей
-      await fetch('/api/users/delete-all', {
+      const response = await fetch('/api/users/delete-all', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         }
       });
-      fetchUsers();
+
+      if (response.ok) {
+        console.log('All users deleted successfully'); // Логирование успешного удаления всех пользователей
+        fetchUsers();
+      } else {
+        console.error('Failed to delete all users:', response.statusText);
+      }
     } catch (error) {
       console.error('Error deleting all users:', error);
     }

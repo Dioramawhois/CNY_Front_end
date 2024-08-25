@@ -1,0 +1,291 @@
+2024-08-25 10:42:55.587 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 10:46:51.719 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 10:48:05.434 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 10:49:11.892 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 10:51:30.690 | DEBUG    | __main__:add_user:23 - {'users': '14'}
+2024-08-25 10:54:41.790 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 10:55:11.635 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick'}
+2024-08-25 10:56:44.389 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 10:57:00.105 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick'}
+2024-08-25 11:01:18.583 | DEBUG    | __main__:add_user:23 - {'users': '@artypatrick'}
+2024-08-25 11:04:31.817 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:04:54.657 | DEBUG    | __main__:add_user:23 - {'users': '@rqwqwr'}
+2024-08-25 11:04:54.657 | DEBUG    | __main__:add_user:25 - []
+2024-08-25 11:06:02.122 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:06:23.004 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick'}
+2024-08-25 11:06:23.004 | DEBUG    | __main__:add_user:25 - https://t.me/artypatrick
+2024-08-25 11:06:23.005 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.005 | ERROR    | user_manager:add_user:28 - Unexpected error adding user h: Cannot find any entity corresponding to "h"
+2024-08-25 11:06:23.006 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.006 | ERROR    | user_manager:add_user:28 - Unexpected error adding user t: Cannot find any entity corresponding to "t"
+2024-08-25 11:06:23.006 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.006 | ERROR    | user_manager:add_user:28 - Unexpected error adding user t: Cannot find any entity corresponding to "t"
+2024-08-25 11:06:23.006 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.007 | ERROR    | user_manager:add_user:28 - Unexpected error adding user p: Cannot find any entity corresponding to "p"
+2024-08-25 11:06:23.007 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.007 | ERROR    | user_manager:add_user:28 - Unexpected error adding user s: Cannot find any entity corresponding to "s"
+2024-08-25 11:06:23.007 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.007 | ERROR    | user_manager:add_user:28 - Unexpected error adding user :: Cannot find any entity corresponding to ":"
+2024-08-25 11:06:23.008 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.008 | ERROR    | user_manager:add_user:28 - Unexpected error adding user /: Cannot find any entity corresponding to "/"
+2024-08-25 11:06:23.008 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.008 | ERROR    | user_manager:add_user:28 - Unexpected error adding user /: Cannot find any entity corresponding to "/"
+2024-08-25 11:06:23.008 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.009 | ERROR    | user_manager:add_user:28 - Unexpected error adding user t: Cannot find any entity corresponding to "t"
+2024-08-25 11:06:23.009 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.009 | ERROR    | user_manager:add_user:28 - Unexpected error adding user .: Cannot find any entity corresponding to "."
+2024-08-25 11:06:23.009 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.009 | ERROR    | user_manager:add_user:28 - Unexpected error adding user m: Cannot find any entity corresponding to "m"
+2024-08-25 11:06:23.009 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.010 | ERROR    | user_manager:add_user:28 - Unexpected error adding user e: Cannot find any entity corresponding to "e"
+2024-08-25 11:06:23.010 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.010 | ERROR    | user_manager:add_user:28 - Unexpected error adding user /: Cannot find any entity corresponding to "/"
+2024-08-25 11:06:23.010 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.011 | ERROR    | user_manager:add_user:28 - Unexpected error adding user a: Cannot find any entity corresponding to "a"
+2024-08-25 11:06:23.011 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.011 | ERROR    | user_manager:add_user:28 - Unexpected error adding user r: Cannot find any entity corresponding to "r"
+2024-08-25 11:06:23.011 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.011 | ERROR    | user_manager:add_user:28 - Unexpected error adding user t: Cannot find any entity corresponding to "t"
+2024-08-25 11:06:23.012 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.012 | ERROR    | user_manager:add_user:28 - Unexpected error adding user y: Cannot find any entity corresponding to "y"
+2024-08-25 11:06:23.017 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.017 | ERROR    | user_manager:add_user:28 - Unexpected error adding user p: Cannot find any entity corresponding to "p"
+2024-08-25 11:06:23.017 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.018 | ERROR    | user_manager:add_user:28 - Unexpected error adding user a: Cannot find any entity corresponding to "a"
+2024-08-25 11:06:23.018 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.018 | ERROR    | user_manager:add_user:28 - Unexpected error adding user t: Cannot find any entity corresponding to "t"
+2024-08-25 11:06:23.018 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.018 | ERROR    | user_manager:add_user:28 - Unexpected error adding user r: Cannot find any entity corresponding to "r"
+2024-08-25 11:06:23.018 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.019 | ERROR    | user_manager:add_user:28 - Unexpected error adding user i: Cannot find any entity corresponding to "i"
+2024-08-25 11:06:23.019 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.019 | ERROR    | user_manager:add_user:28 - Unexpected error adding user c: Cannot find any entity corresponding to "c"
+2024-08-25 11:06:23.019 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:06:23.019 | ERROR    | user_manager:add_user:28 - Unexpected error adding user k: Cannot find any entity corresponding to "k"
+2024-08-25 11:08:52.173 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:09:29.392 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick'}
+2024-08-25 11:09:29.393 | DEBUG    | __main__:add_user:25 - https://t.me/artypatrick
+2024-08-25 11:09:29.393 | ERROR    | __main__:add_user:40 - Invalid identifier format: h
+2024-08-25 11:09:29.393 | ERROR    | __main__:add_user:40 - Invalid identifier format: t
+2024-08-25 11:09:29.393 | ERROR    | __main__:add_user:40 - Invalid identifier format: t
+2024-08-25 11:09:29.393 | ERROR    | __main__:add_user:40 - Invalid identifier format: p
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: s
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: :
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: /
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: /
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: t
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: .
+2024-08-25 11:09:29.394 | ERROR    | __main__:add_user:40 - Invalid identifier format: m
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: e
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: /
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: a
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: r
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: t
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: y
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: p
+2024-08-25 11:09:29.395 | ERROR    | __main__:add_user:40 - Invalid identifier format: a
+2024-08-25 11:09:29.396 | ERROR    | __main__:add_user:40 - Invalid identifier format: t
+2024-08-25 11:09:29.396 | ERROR    | __main__:add_user:40 - Invalid identifier format: r
+2024-08-25 11:09:29.396 | ERROR    | __main__:add_user:40 - Invalid identifier format: i
+2024-08-25 11:09:29.396 | ERROR    | __main__:add_user:40 - Invalid identifier format: c
+2024-08-25 11:09:29.396 | ERROR    | __main__:add_user:40 - Invalid identifier format: k
+2024-08-25 11:12:05.991 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:12:10.093 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick\nhttps://t.me/Yanik_Tems'}
+2024-08-25 11:12:10.093 | DEBUG    | __main__:add_user:26 - https://t.me/artypatrick
+https://t.me/Yanik_Tems
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: h
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: p
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: s
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: :
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: /
+2024-08-25 11:12:10.094 | ERROR    | __main__:add_user:41 - Invalid identifier format: /
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: .
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: m
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: e
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: /
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: a
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: r
+2024-08-25 11:12:10.095 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: y
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: p
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: a
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: r
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: i
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: c
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: k
+2024-08-25 11:12:10.096 | ERROR    | __main__:add_user:41 - Invalid identifier format: 
+
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: h
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: p
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: s
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: :
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: /
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: /
+2024-08-25 11:12:10.097 | ERROR    | __main__:add_user:41 - Invalid identifier format: t
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: .
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: m
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: e
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: /
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: Y
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: a
+2024-08-25 11:12:10.098 | ERROR    | __main__:add_user:41 - Invalid identifier format: n
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: i
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: k
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: _
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: T
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: e
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: m
+2024-08-25 11:12:10.099 | ERROR    | __main__:add_user:41 - Invalid identifier format: s
+2024-08-25 11:25:07.184 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:25:35.117 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:25:35.118 | DEBUG    | __main__:add_user:32 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:25:35.118 | DEBUG    | __main__:add_user:52 - User added: <coroutine object UserManager.add_user at 0x7f9996bd77d0>
+2024-08-25 11:25:35.120 | DEBUG    | __main__:add_user:52 - User added: <coroutine object UserManager.add_user at 0x7f9996bd7920>
+2024-08-25 11:32:19.624 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:32:31.938 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:32:31.939 | DEBUG    | __main__:add_user:32 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:32:31.939 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:32:31.940 | ERROR    | user_manager:add_user:28 - Unexpected error adding user artypatrick: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-25 11:32:31.940 | DEBUG    | __main__:add_user:52 - User added: False
+2024-08-25 11:32:31.941 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:32:31.941 | ERROR    | user_manager:add_user:28 - Unexpected error adding user Yanik_Tems: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-25 11:32:31.941 | DEBUG    | __main__:add_user:52 - User added: False
+2024-08-25 11:35:16.248 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:36:06.704 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:38:12.132 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:38:16.438 | DEBUG    | __main__:add_user:24 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:38:16.438 | DEBUG    | __main__:add_user:31 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:38:16.438 | ERROR    | __main__:add_user:57 - Unexpected error: There is no current event loop in thread 'Thread-1 (process_request_thread)'.
+2024-08-25 11:39:33.658 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:39:52.169 | DEBUG    | __main__:add_user:24 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:39:52.170 | DEBUG    | __main__:add_user:31 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:39:52.171 | ERROR    | __main__:add_user:57 - Unexpected error: There is no current event loop in thread 'Thread-1 (process_request_thread)'.
+2024-08-25 11:40:04.686 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:40:36.728 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:40:40.029 | DEBUG    | __main__:add_user:23 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:40:40.030 | DEBUG    | __main__:add_user:32 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:40:40.030 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:40:40.030 | ERROR    | user_manager:add_user:28 - Unexpected error adding user artypatrick: unsupported operand type(s) for +: 'coroutine' and 'str'
+2024-08-25 11:40:40.032 | DEBUG    | __main__:add_user:52 - User added: False
+2024-08-25 11:40:40.033 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:40:40.033 | ERROR    | user_manager:add_user:28 - Unexpected error adding user Yanik_Tems: unsupported operand type(s) for +: 'coroutine' and 'str'
+2024-08-25 11:40:40.033 | DEBUG    | __main__:add_user:52 - User added: False
+2024-08-25 11:42:06.923 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:42:16.880 | DEBUG    | __main__:add_user:24 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:42:16.880 | DEBUG    | __main__:add_user:31 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:42:16.880 | ERROR    | __main__:add_user:57 - Unexpected error: There is no current event loop in thread 'Thread-1 (process_request_thread)'.
+2024-08-25 11:43:41.727 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:43:48.125 | DEBUG    | __main__:add_user:27 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:43:48.126 | DEBUG    | __main__:add_user:34 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:43:48.126 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:43:48.127 | ERROR    | user_manager:add_user:28 - Unexpected error adding user artypatrick: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-25 11:43:48.127 | DEBUG    | __main__:add_user:58 - User added: False
+2024-08-25 11:43:48.127 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:43:48.128 | ERROR    | user_manager:add_user:28 - Unexpected error adding user Yanik_Tems: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-25 11:43:48.128 | DEBUG    | __main__:add_user:58 - User added: False
+2024-08-25 11:47:48.361 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:47:53.481 | DEBUG    | __main__:add_user:22 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:47:53.482 | DEBUG    | __main__:add_user:29 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:47:53.482 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:47:53.568 | ERROR    | user_manager:add_user:28 - Unexpected error adding user artypatrick: unsupported operand type(s) for +: 'User' and 'str'
+2024-08-25 11:47:53.568 | DEBUG    | __main__:add_user:46 - User added: False
+2024-08-25 11:47:53.569 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:47:53.635 | ERROR    | user_manager:add_user:28 - Unexpected error adding user Yanik_Tems: unsupported operand type(s) for +: 'User' and 'str'
+2024-08-25 11:47:53.636 | DEBUG    | __main__:add_user:46 - User added: False
+2024-08-25 11:50:30.832 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:50:37.486 | DEBUG    | __main__:add_user:22 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:50:37.487 | DEBUG    | __main__:add_user:29 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:50:37.487 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:50:37.619 | ERROR    | user_manager:add_user:27 - Unexpected error adding user artypatrick: 'User' object has no attribute 'is_user'
+2024-08-25 11:50:37.619 | DEBUG    | __main__:add_user:46 - User added: False
+2024-08-25 11:50:37.620 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:50:37.753 | ERROR    | user_manager:add_user:27 - Unexpected error adding user Yanik_Tems: 'User' object has no attribute 'is_user'
+2024-08-25 11:50:37.753 | DEBUG    | __main__:add_user:46 - User added: False
+2024-08-25 11:50:57.138 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:51:06.403 | DEBUG    | __main__:add_user:22 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:51:06.404 | DEBUG    | __main__:add_user:29 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:51:06.404 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:51:06.490 | ERROR    | user_manager:add_user:28 - Unexpected error adding user artypatrick: 'User' object has no attribute 'is_user'
+2024-08-25 11:51:06.491 | DEBUG    | __main__:add_user:46 - User added: False
+2024-08-25 11:51:06.491 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 11:51:06.559 | ERROR    | user_manager:add_user:28 - Unexpected error adding user Yanik_Tems: 'User' object has no attribute 'is_user'
+2024-08-25 11:51:06.559 | DEBUG    | __main__:add_user:46 - User added: False
+2024-08-25 11:54:47.484 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 11:54:56.119 | DEBUG    | __main__:add_user:22 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 11:54:56.120 | DEBUG    | __main__:add_user:29 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 11:54:56.120 | DEBUG    | user_manager:add_user:13 - Work 1
+
+2024-08-25 11:54:56.275 | DEBUG    | user_manager:add_user:16 - User(id=5146524922, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-7609618253060389731, first_name='Arty', last_name='Patrick', username='artypatrick', phone=None, photo=UserProfilePhoto(photo_id=5438403735157063986, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xa9\xf6\x83\x1b,\x8a@a\xe9E\x14S\x03'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 11:54:56.279 | INFO     | db_manager:add_user:26 - User artypatrick added to the database.
+2024-08-25 11:54:56.280 | INFO     | user_manager:add_user:31 - User artypatrick added successfully.
+2024-08-25 11:54:56.280 | DEBUG    | __main__:add_user:46 - User added: True
+2024-08-25 11:54:56.281 | DEBUG    | user_manager:add_user:13 - Work 1
+
+2024-08-25 11:54:56.468 | DEBUG    | user_manager:add_user:16 - User(id=882392195, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=4794017578869401578, first_name='YanikT', last_name=None, username='Yanik_Tems', phone=None, photo=UserProfilePhoto(photo_id=3789845620226893742, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xaf\xf6x\x05\xa7\x9eC\xf9}8\xf5\xcd\x14Q@\x1f'), status=UserStatusRecently(by_me=True), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5408899559940169872), usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 11:54:56.470 | INFO     | db_manager:add_user:26 - User Yanik_Tems added to the database.
+2024-08-25 11:54:56.471 | INFO     | user_manager:add_user:31 - User Yanik_Tems added successfully.
+2024-08-25 11:54:56.471 | DEBUG    | __main__:add_user:46 - User added: True
+2024-08-25 12:02:20.751 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:02:37.274 | INFO     | db_manager:delete_user:43 - User 882392195 deleted from the database.
+2024-08-25 12:04:08.767 | INFO     | db_manager:__init__:17 - Database connection established
+2024-08-25 12:04:18.093 | INFO     | __main__:delete_all_users:79 - All users deleted from the database.
+2024-08-25 12:04:35.999 | DEBUG    | __main__:add_user:22 - {'users': 'https://t.me/artypatrick https://t.me/Yanik_Tems'}
+2024-08-25 12:04:35.999 | DEBUG    | __main__:add_user:29 - ['https://t.me/artypatrick', 'https://t.me/Yanik_Tems']
+2024-08-25 12:04:36.000 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:04:36.076 | DEBUG    | user_manager:add_user:17 - User(id=5146524922, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=-7609618253060389731, first_name='Arty', last_name='Patrick', username='artypatrick', phone=None, photo=UserProfilePhoto(photo_id=5438403735157063986, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xa9\xf6\x83\x1b,\x8a@a\xe9E\x14S\x03'), status=UserStatusRecently(by_me=False), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 12:04:36.079 | INFO     | db_manager:add_user:26 - User artypatrick added to the database.
+2024-08-25 12:04:36.079 | INFO     | user_manager:add_user:33 - User artypatrick added successfully.
+2024-08-25 12:04:36.079 | DEBUG    | __main__:add_user:46 - User added: True
+2024-08-25 12:04:36.079 | DEBUG    | user_manager:add_user:14 - Work 1
+
+2024-08-25 12:04:36.149 | DEBUG    | user_manager:add_user:17 - User(id=882392195, is_self=False, contact=False, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=True, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, access_hash=4794017578869401578, first_name='YanikT', last_name=None, username='Yanik_Tems', phone=None, photo=UserProfilePhoto(photo_id=3789845620226893742, dc_id=2, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\xaf\xf6x\x05\xa7\x9eC\xf9}8\xf5\xcd\x14Q@\x1f'), status=UserStatusRecently(by_me=True), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=EmojiStatus(document_id=5408899559940169872), usernames=[], stories_max_id=None, color=None, profile_color=None)
+
+2024-08-25 12:04:36.150 | INFO     | db_manager:add_user:26 - User Yanik_Tems added to the database.
+2024-08-25 12:04:36.151 | INFO     | user_manager:add_user:33 - User Yanik_Tems added successfully.
+2024-08-25 12:04:36.151 | DEBUG    | __main__:add_user:46 - User added: True

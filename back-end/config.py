@@ -1,6 +1,6 @@
 # config.py
 
-DB_HOST = 'localhost'
+DB_HOST = '31.128.37.55'
 DB_PORT = 5432
 DB_NAME = 'telegram'
 DB_USER = 'bot'
