@@ -1,10 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/MessageSender.css';
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:5000', { transports: ['websocket', 'polling'] }); // Укажите правильный URL и порт
 
 const MessageSender = () => {
   const [message, setMessage] = useState('');
   const [log, setLog] = useState([]);
   const [isSending, setIsSending] = useState(false);
+
+  useEffect(() => {
+    // Обработчик события для получения логов от сервера
+    socket.on('log', (data) => {
+      console.log('Received log from server:', data);
+      setLog((prevLog) => [...prevLog, data.message]);
+    });
+
+    return () => {
+      socket.off('log'); // Отключаем socket при размонтировании компонента
+    };
+  }, []);
 
   const handleMessageChange = (e) => {
     setMessage(e.target.value);

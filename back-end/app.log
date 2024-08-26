@@ -47,3 +47,156 @@
 2024-08-26 06:42:43.264 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
 2024-08-26 15:06:27.932 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
 2024-08-26 15:06:27.935 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-26 19:30:58.410 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-26 19:30:58.416 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-26 19:43:31.434 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:43:31.454 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:46:25.187 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:46:25.213 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:56:22.434 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:56:22.480 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:57:07.120 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:57:07.172 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 19:57:29.230 | INFO     | __main__:check_whitelist:154 - Checking whitelist for user_id: 6094566638
+2024-08-26 19:57:29.235 | INFO     | __main__:check_whitelist:162 - User 6094566638 is authorized.
+2024-08-26 19:57:39.241 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 19:57:39.476 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: testikova
+2024-08-26 19:57:39.476 | DEBUG    | __main__:send_messages_to_all_users:54 - Ожидание 15...
+2024-08-26 19:57:44.820 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 19:57:44.820 | ERROR    | __main__:start_sending_messages:41 - Error starting message sending: This event loop is already running
+2024-08-26 19:57:54.492 | INFO     | __main__:send_messages_to_all_users:56 - Message sent to user dyorcrpto
+2024-08-26 19:57:54.493 | ERROR    | __main__:send_messages_to_all_users:61 - Error sending messages: Server.emit() got an unexpected keyword argument 'broadcast'
+2024-08-26 19:57:54.493 | ERROR    | __main__:start_sending_messages:41 - Error starting message sending: Server.emit() got an unexpected keyword argument 'broadcast'
+2024-08-26 20:01:36.320 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:01:36.363 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:01:43.843 | INFO     | __main__:check_whitelist:155 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:01:43.847 | INFO     | __main__:check_whitelist:163 - User 6094566638 is authorized.
+2024-08-26 20:01:48.785 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 20:09:54.808 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:09:54.861 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:10:00.419 | INFO     | __main__:stop_sending_messages:69 - Stopped sending messages to all users.
+2024-08-26 20:10:02.865 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 20:10:23.212 | INFO     | __main__:stop_sending_messages:69 - Stopped sending messages to all users.
+2024-08-26 20:12:59.910 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:12:59.955 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:13:05.493 | INFO     | __main__:check_whitelist:154 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:13:05.498 | INFO     | __main__:check_whitelist:163 - User 6094566638 is authorized.
+2024-08-26 20:13:08.112 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 20:14:57.887 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:14:57.927 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:15:02.901 | INFO     | __main__:check_whitelist:154 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:15:02.904 | INFO     | __main__:check_whitelist:163 - User 6094566638 is authorized.
+2024-08-26 20:15:07.495 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 20:15:37.028 | INFO     | __main__:check_whitelist:154 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:15:37.031 | INFO     | __main__:check_whitelist:163 - User 6094566638 is authorized.
+2024-08-26 20:15:40.960 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 20:22:09.879 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:22:09.927 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:22:16.359 | INFO     | __main__:check_whitelist:157 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:22:16.365 | INFO     | __main__:check_whitelist:166 - User 6094566638 is authorized.
+2024-08-26 20:22:27.702 | INFO     | __main__:start_sending_messages:35 - Started sending messages to all users.
+2024-08-26 20:22:27.705 | INFO     | __main__:send_messages_to_all_users:49 - Sending messages to 3 users.
+2024-08-26 20:22:27.707 | ERROR    | chat_manager:send_message:22 - Failed to send message to dyorcrpto on attempt 1: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-26 20:22:29.710 | ERROR    | chat_manager:send_message:22 - Failed to send message to dyorcrpto on attempt 2: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-26 20:22:31.712 | ERROR    | chat_manager:send_message:22 - Failed to send message to dyorcrpto on attempt 3: The asyncio event loop must not change after connection (see the FAQ for details)
+2024-08-26 20:22:33.714 | ERROR    | chat_manager:send_message:24 - Max retries reached for dyorcrpto. Skipping...
+2024-08-26 20:22:33.714 | DEBUG    | __main__:send_messages_to_all_users:57 - Ожидание 9 секунд перед отправкой следующего сообщения...
+2024-08-26 20:22:38.350 | INFO     | __main__:stop_sending_messages:72 - Stopped sending messages to all users.
+2024-08-26 20:22:42.722 | INFO     | __main__:send_messages_to_all_users:59 - Message sent to user dyorcrpto
+2024-08-26 20:22:42.723 | INFO     | __main__:send_messages_to_all_users:52 - Sending messages stopped.
+2024-08-26 20:24:24.489 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:24:24.534 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:24:28.916 | INFO     | __main__:start_sending_messages:37 - Started sending messages to all users.
+2024-08-26 20:24:28.918 | ERROR    | __main__:start_sending_messages:44 - Error starting message sending: There is no current event loop in thread 'Thread-2 (process_request_thread)'.
+2024-08-26 20:25:51.943 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:25:51.994 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:26:13.388 | INFO     | __main__:check_whitelist:168 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:26:13.393 | INFO     | __main__:check_whitelist:177 - User 6094566638 is authorized.
+2024-08-26 20:26:19.047 | INFO     | __main__:start_sending_messages:41 - Started sending messages to all users.
+2024-08-26 20:26:19.050 | ERROR    | __main__:start_sending_messages:48 - Error starting message sending: There is no current event loop in thread 'Thread-3 (process_request_thread)'.
+2024-08-26 20:30:28.580 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:30:28.624 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:30:29.022 | INFO     | __main__:start_telegram_client:38 - Telegram client started successfully.
+2024-08-26 20:34:30.523 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:34:30.575 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:34:31.148 | INFO     | __main__:start_telegram_client:38 - Telegram client started successfully.
+2024-08-26 20:34:37.092 | INFO     | __main__:check_whitelist:178 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:34:37.095 | INFO     | __main__:check_whitelist:187 - User 6094566638 is authorized.
+2024-08-26 20:34:43.834 | INFO     | __main__:start_sending_messages:52 - Started sending messages to all users.
+2024-08-26 20:34:43.838 | INFO     | __main__:send_messages_to_all_users:66 - Sending messages to 3 users.
+2024-08-26 20:34:44.081 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-26 20:34:44.082 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 7 секунд перед отправкой следующего сообщения...
+2024-08-26 20:34:51.085 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user dyorcrpto
+2024-08-26 20:34:51.346 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: 1
+2024-08-26 20:34:51.347 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 11 секунд перед отправкой следующего сообщения...
+2024-08-26 20:35:02.354 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user Fckunggbtch
+2024-08-26 20:35:02.549 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 1
+2024-08-26 20:35:02.550 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 14 секунд перед отправкой следующего сообщения...
+2024-08-26 20:35:16.561 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user testirovkaebalkarot
+2024-08-26 20:36:00.121 | INFO     | __main__:check_whitelist:178 - Checking whitelist for user_id: 0
+2024-08-26 20:36:00.124 | INFO     | __main__:check_whitelist:187 - User 0 is authorized.
+2024-08-26 20:36:12.297 | INFO     | __main__:start_sending_messages:52 - Started sending messages to all users.
+2024-08-26 20:36:12.301 | INFO     | __main__:send_messages_to_all_users:66 - Sending messages to 3 users.
+2024-08-26 20:36:12.389 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: test
+2024-08-26 20:36:12.389 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 15 секунд перед отправкой следующего сообщения...
+2024-08-26 20:36:27.402 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user dyorcrpto
+2024-08-26 20:36:27.544 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: test
+2024-08-26 20:36:27.545 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 7 секунд перед отправкой следующего сообщения...
+2024-08-26 20:36:34.549 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user Fckunggbtch
+2024-08-26 20:36:34.721 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: test
+2024-08-26 20:36:34.722 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 6 секунд перед отправкой следующего сообщения...
+2024-08-26 20:36:40.728 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user testirovkaebalkarot
+2024-08-26 20:38:23.903 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:38:23.947 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:38:24.327 | INFO     | __main__:start_telegram_client:38 - Telegram client started successfully.
+2024-08-26 20:39:45.549 | INFO     | __main__:check_whitelist:178 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:39:45.557 | INFO     | __main__:check_whitelist:187 - User 6094566638 is authorized.
+2024-08-26 20:39:53.897 | INFO     | __main__:start_sending_messages:52 - Started sending messages to all users.
+2024-08-26 20:39:53.899 | INFO     | __main__:send_messages_to_all_users:66 - Sending messages to 3 users.
+2024-08-26 20:39:54.060 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-26 20:39:54.060 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 13 секунд перед отправкой следующего сообщения...
+2024-08-26 20:40:07.066 | INFO     | __main__:send_messages_to_all_users:77 - Message sent to user dyorcrpto
+2024-08-26 20:40:07.067 | ERROR    | __main__:send_messages_to_all_users:82 - Failed to send message to dyorcrpto: Server.emit() got an unexpected keyword argument 'broadcast'
+2024-08-26 20:40:07.067 | ERROR    | __main__:send_messages_to_all_users:85 - Error sending messages: Server.emit() got an unexpected keyword argument 'broadcast'
+2024-08-26 20:42:35.501 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:42:35.546 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:42:35.919 | INFO     | __main__:start_telegram_client:38 - Telegram client started successfully.
+2024-08-26 20:42:40.472 | INFO     | __main__:check_whitelist:178 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:42:40.476 | INFO     | __main__:check_whitelist:187 - User 6094566638 is authorized.
+2024-08-26 20:42:43.549 | INFO     | __main__:start_sending_messages:52 - Started sending messages to all users.
+2024-08-26 20:42:43.552 | INFO     | __main__:send_messages_to_all_users:66 - Sending messages to 3 users.
+2024-08-26 20:42:43.644 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-26 20:42:43.644 | DEBUG    | __main__:send_messages_to_all_users:75 - Ожидание 13 секунд перед отправкой следующего сообщения...
+2024-08-26 20:42:47.626 | INFO     | __main__:stop_sending_messages:93 - Stopped sending messages to all users.
+2024-08-26 20:42:49.516 | INFO     | __main__:check_whitelist:178 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:42:49.517 | INFO     | __main__:check_whitelist:187 - User 6094566638 is authorized.
+2024-08-26 20:44:23.137 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:44:23.178 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:44:23.867 | INFO     | __main__:start_telegram_client:38 - Telegram client started successfully.
+2024-08-26 20:44:33.706 | INFO     | __main__:check_whitelist:178 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:44:33.708 | INFO     | __main__:check_whitelist:187 - User 6094566638 is authorized.
+2024-08-26 20:47:01.967 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:47:02.013 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:47:02.498 | INFO     | __main__:start_telegram_client:43 - Telegram client started successfully.
+2024-08-26 20:47:08.342 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:47:08.347 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-26 20:47:17.202 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:47:17.204 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-26 20:47:22.497 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:47:22.541 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-26 20:47:22.990 | INFO     | __main__:start_telegram_client:43 - Telegram client started successfully.
+2024-08-26 20:47:24.198 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:47:24.201 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-26 20:47:29.128 | INFO     | __main__:start_sending_messages:57 - Started sending messages to all users.
+2024-08-26 20:47:29.131 | INFO     | __main__:send_messages_to_all_users:71 - Sending messages to 3 users.
+2024-08-26 20:47:29.243 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 3
+2024-08-26 20:47:29.244 | DEBUG    | __main__:send_messages_to_all_users:80 - Ожидание 11 секунд перед отправкой следующего сообщения...
+2024-08-26 20:47:40.256 | INFO     | __main__:send_messages_to_all_users:82 - Message sent to user dyorcrpto
+2024-08-26 20:47:40.392 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: 3
+2024-08-26 20:47:40.393 | DEBUG    | __main__:send_messages_to_all_users:80 - Ожидание 10 секунд перед отправкой следующего сообщения...
+2024-08-26 20:47:50.402 | INFO     | __main__:send_messages_to_all_users:82 - Message sent to user Fckunggbtch
+2024-08-26 20:47:50.574 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 3
+2024-08-26 20:47:50.574 | DEBUG    | __main__:send_messages_to_all_users:80 - Ожидание 13 секунд перед отправкой следующего сообщения...
+2024-08-26 20:48:03.576 | INFO     | __main__:send_messages_to_all_users:82 - Message sent to user testirovkaebalkarot
+2024-08-26 20:48:29.445 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:48:29.449 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
