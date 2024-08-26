@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/www/gasbot-frontend/CNY_Front_end/back-end/main.py", line 2, in <module>
+    from db_manager import Database
+  File "/var/www/gasbot-frontend/CNY_Front_end/back-end/db_manager.py", line 1, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'

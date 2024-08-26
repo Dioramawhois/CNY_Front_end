@@ -1433,3 +1433,86 @@ HINT:  Perhaps you meant to reference the column "whitelist.user_id".
 2024-08-25 22:43:50.499 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 3
 2024-08-25 22:43:50.499 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 8...
 2024-08-25 22:43:58.506 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user testirovkaebalkarot
+2024-08-25 22:48:37.462 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:48:37.479 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:48:51.880 | INFO     | __main__:check_whitelist:149 - Checking whitelist for user_id: 0
+2024-08-25 22:48:51.885 | INFO     | __main__:check_whitelist:158 - User 0 is authorized.
+2024-08-25 22:48:55.717 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:48:55.837 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-25 22:48:55.838 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user dyorcrpto
+2024-08-25 22:48:55.838 | DEBUG    | __main__:send_messages_to_all_users:56 - Waiting for 7 seconds...
+2024-08-25 22:49:03.131 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: 1
+2024-08-25 22:49:03.132 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user Fckunggbtch
+2024-08-25 22:49:03.132 | DEBUG    | __main__:send_messages_to_all_users:56 - Waiting for 8 seconds...
+2024-08-25 22:49:11.314 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 1
+2024-08-25 22:49:11.315 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user testirovkaebalkarot
+2024-08-25 22:49:11.315 | DEBUG    | __main__:send_messages_to_all_users:56 - Waiting for 11 seconds...
+2024-08-25 22:49:22.319 | INFO     | __main__:send_messages_to_all_users:61 - All messages sent. Stopping sending process.
+2024-08-25 22:49:44.183 | INFO     | __main__:stop_sending_messages:72 - Stopped sending messages to all users.
+2024-08-25 22:51:41.698 | INFO     | __main__:check_whitelist:149 - Checking whitelist for user_id: 0
+2024-08-25 22:51:41.705 | INFO     | __main__:check_whitelist:158 - User 0 is authorized.
+2024-08-25 22:52:15.762 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:52:15.944 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-25 22:52:15.944 | INFO     | __main__:send_messages_to_all_users:52 - Message sent to user dyorcrpto
+2024-08-25 22:52:15.944 | DEBUG    | __main__:send_messages_to_all_users:56 - Waiting for 15 seconds...
+2024-08-25 22:52:21.229 | INFO     | __main__:stop_sending_messages:72 - Stopped sending messages to all users.
+2024-08-25 22:52:23.218 | INFO     | __main__:stop_sending_messages:72 - Stopped sending messages to all users.
+2024-08-25 22:52:30.958 | INFO     | __main__:send_messages_to_all_users:61 - All messages sent. Stopping sending process.
+2024-08-25 22:52:45.617 | INFO     | __main__:check_whitelist:149 - Checking whitelist for user_id: 0
+2024-08-25 22:52:45.621 | INFO     | __main__:check_whitelist:158 - User 0 is authorized.
+2024-08-25 22:52:53.307 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:52:53.323 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:53:00.047 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:53:00.130 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: Привет
+2024-08-25 22:53:00.130 | INFO     | __main__:send_messages_to_all_users:49 - Message sent to user dyorcrpto
+2024-08-25 22:53:00.132 | DEBUG    | __main__:send_messages_to_all_users:53 - Waiting for 5 seconds...
+2024-08-25 22:53:00.238 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: Привет
+2024-08-25 22:53:00.239 | INFO     | __main__:send_messages_to_all_users:49 - Message sent to user Fckunggbtch
+2024-08-25 22:53:00.239 | DEBUG    | __main__:send_messages_to_all_users:53 - Waiting for 13 seconds...
+2024-08-25 22:53:00.411 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: Привет
+2024-08-25 22:53:00.411 | INFO     | __main__:send_messages_to_all_users:49 - Message sent to user testirovkaebalkarot
+2024-08-25 22:53:00.411 | DEBUG    | __main__:send_messages_to_all_users:53 - Waiting for 7 seconds...
+2024-08-25 22:53:34.309 | INFO     | __main__:stop_sending_messages:68 - Stopped sending messages to all users.
+2024-08-25 22:56:59.140 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:56:59.158 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:57:04.395 | INFO     | __main__:check_whitelist:164 - Checking whitelist for user_id: 0
+2024-08-25 22:57:04.400 | INFO     | __main__:check_whitelist:173 - User 0 is authorized.
+2024-08-25 22:57:18.632 | INFO     | __main__:check_whitelist:164 - Checking whitelist for user_id: 0
+2024-08-25 22:57:18.637 | INFO     | __main__:check_whitelist:173 - User 0 is authorized.
+2024-08-25 22:57:23.374 | INFO     | __main__:start_sending_messages:50 - Started sending messages to all users.
+2024-08-25 22:57:23.374 | ERROR    | __main__:start_sending_messages:56 - Error starting message sending: An asyncio.Future, a coroutine or an awaitable is required
+2024-08-25 22:57:43.805 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:57:43.822 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:57:46.518 | INFO     | __main__:start_sending_messages:50 - Started sending messages to all users.
+2024-08-25 22:57:46.518 | ERROR    | __main__:start_sending_messages:56 - Error starting message sending: An asyncio.Future, a coroutine or an awaitable is required
+2024-08-25 22:58:47.733 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:58:47.752 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:58:51.569 | INFO     | __main__:start_sending_messages:50 - Started sending messages to all users.
+2024-08-25 22:58:51.570 | ERROR    | __main__:start_sending_messages:56 - Error starting message sending: a coroutine was expected, got <async_generator object send_messages_to_all_users at 0x7f064a0079c0>
+2024-08-25 22:59:16.337 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:59:16.360 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 22:59:24.020 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-25 22:59:24.027 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-25 22:59:28.164 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:59:28.245 | INFO     | chat_manager:send_message:19 - Message sent to dyorcrpto: 1
+2024-08-25 22:59:28.246 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 9...
+2024-08-25 22:59:29.681 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:59:29.682 | ERROR    | __main__:start_sending_messages:38 - Error starting message sending: This event loop is already running
+2024-08-25 22:59:37.250 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user dyorcrpto
+2024-08-25 22:59:37.368 | INFO     | chat_manager:send_message:19 - Message sent to Fckunggbtch: 1
+2024-08-25 22:59:37.368 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 7...
+2024-08-25 22:59:44.376 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user Fckunggbtch
+2024-08-25 22:59:44.551 | INFO     | __main__:start_sending_messages:32 - Started sending messages to all users.
+2024-08-25 22:59:44.551 | ERROR    | __main__:start_sending_messages:38 - Error starting message sending: This event loop is already running
+2024-08-25 22:59:44.733 | INFO     | chat_manager:send_message:19 - Message sent to testirovkaebalkarot: 1
+2024-08-25 22:59:44.733 | DEBUG    | __main__:send_messages_to_all_users:52 - Ожидание 14...
+2024-08-25 22:59:58.748 | INFO     | __main__:send_messages_to_all_users:54 - Message sent to user testirovkaebalkarot
+2024-08-25 23:00:17.687 | INFO     | __main__:stop_sending_messages:63 - Stopped sending messages to all users.
+2024-08-25 23:26:29.061 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:26:29.089 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:26:35.179 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:26:35.185 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:28:05.849 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:28:05.878 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:28:18.264 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:28:18.276 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.

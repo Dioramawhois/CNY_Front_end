@@ -20,6 +20,7 @@ db = Database()
 async def cmd_start(message: types.Message):
     user_id = message.from_user.id
     web_app_url = f"{WEB_APP_URL}?user_id={user_id}"
+    print(user_id)
 
     # Проверяем, есть ли пользователь в белом списке
     if db.is_user_in_whitelist(user_id):

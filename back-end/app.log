@@ -1,0 +1,49 @@
+2024-08-25 23:34:27.028 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:34:27.044 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:41:03.771 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:41:03.790 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:41:33.979 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:41:33.987 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:45:51.690 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:45:51.707 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-25 23:46:04.543 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:46:04.552 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:46:09.592 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:46:09.593 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:46:12.279 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:46:12.280 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:48:28.224 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:48:28.227 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:50:24.893 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-25 23:50:24.895 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-25 23:50:34.500 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-25 23:50:34.501 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-25 23:51:03.169 | DEBUG    | __main__:add_user:73 - {'users': 'Me'}
+2024-08-25 23:51:03.169 | DEBUG    | __main__:add_user:80 - ['Me']
+2024-08-25 23:51:03.170 | ERROR    | __main__:add_user:92 - Invalid identifier format: Me
+2024-08-25 23:51:09.363 | DEBUG    | __main__:add_user:73 - {'users': '@meeeee'}
+2024-08-25 23:51:09.363 | DEBUG    | __main__:add_user:80 - ['@meeeee']
+2024-08-25 23:51:09.364 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 23:51:09.561 | ERROR    | user_manager:add_user:34 - Error adding user @meeeee: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2024-08-25 23:51:09.562 | DEBUG    | __main__:add_user:97 - User added: False
+2024-08-25 23:51:17.854 | DEBUG    | __main__:add_user:73 - {'users': '@meep'}
+2024-08-25 23:51:17.855 | DEBUG    | __main__:add_user:80 - ['@meep']
+2024-08-25 23:51:17.855 | DEBUG    | user_manager:add_user:12 - Work 1
+
+2024-08-25 23:51:17.917 | ERROR    | user_manager:add_user:37 - Unexpected error adding @meep: No user has "meep" as username
+2024-08-25 23:51:17.918 | DEBUG    | __main__:add_user:97 - User added: False
+2024-08-25 23:56:04.951 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-25 23:56:04.955 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
+2024-08-25 23:56:23.087 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-25 23:56:23.088 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-26 05:17:04.691 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-26 05:17:04.696 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-26 05:18:31.049 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-26 05:18:31.050 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-26 05:19:43.417 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-26 05:19:43.418 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-26 06:42:43.259 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 0
+2024-08-26 06:42:43.264 | INFO     | __main__:check_whitelist:149 - User 0 is authorized.
+2024-08-26 15:06:27.932 | INFO     | __main__:check_whitelist:140 - Checking whitelist for user_id: 6094566638
+2024-08-26 15:06:27.935 | INFO     | __main__:check_whitelist:149 - User 6094566638 is authorized.
