@@ -20,7 +20,6 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 socketio = SocketIO(app, cors_allowed_origins="*")  # Разрешаем все источники
 
-db = Database()
 user_manager = UserManager(telegram_client)
 chat_manager = ChatManager(telegram_client)
 
@@ -67,25 +66,26 @@ def start_sending_messages():
 async def send_messages_to_all_users(message):
     global is_sending_messages
     try:
-        users = user_manager.list_users(db)
-        logger.info(f"Sending messages to {len(users)} users.")
-        for user in users:
-            if not is_sending_messages:
-                logger.info("Sending messages stopped.")
-                break
-            identifier = user[1] if user[1] else user[0]
-            try:
-                await chat_manager.send_message(identifier, message)
-                random_sleep = random.randint(Sleep[0], Sleep[1])
-                logger.debug(f'Ожидание {random_sleep} секунд перед отправкой следующего сообщения...')
-                await asyncio.sleep(random_sleep)
-                logger.info(f"Message sent to user {identifier}")
+        with Database() as db:
+            users = user_manager.list_users(db)
+            logger.info(f"Sending messages to {len(users)} users.")
+            for user in users:
+                if not is_sending_messages:
+                    logger.info("Sending messages stopped.")
+                    break
+                identifier = user[1] if user[1] else user[0]
+                try:
+                    await chat_manager.send_message(identifier, message)
+                    random_sleep = random.randint(Sleep[0], Sleep[1])
+                    logger.debug(f'Ожидание {random_sleep} секунд перед отправкой следующего сообщения...')
+                    await asyncio.sleep(random_sleep)
+                    logger.info(f"Message sent to user {identifier}")
 
-                # Отправляем лог в реальном времени через WebSocket всем клиентам
-                socketio.emit('log', {'message': f"Message sent to user {identifier}"})
-            except Exception as e:
-                logger.error(f"Failed to send message to {identifier}: {e}")
-                socketio.emit('log', {'message': f"Failed to send message to {identifier}: {e}"})
+                    # Отправляем лог в реальном времени через WebSocket всем клиентам
+                    socketio.emit('log', {'message': f"Message sent to user {identifier}"})
+                except Exception as e:
+                    logger.error(f"Failed to send message to {identifier}: {e}")
+                    socketio.emit('log', {'message': f"Failed to send message to {identifier}: {e}"})
     except Exception as e:
         logger.error(f"Error sending messages: {e}")
         socketio.emit('log', {'message': f"Error sending messages: {e}"})
@@ -116,23 +116,24 @@ def add_user():
         
         logger.debug(identifiers)
 
-        for identifier in identifiers:
-            if identifier.startswith('https://t.me/'):
-                identifier = identifier.split('/')[-1]
-            elif identifier.startswith('@'):
-                pass
-            else:
-                try:
-                    identifier = int(identifier)
-                except ValueError:
-                    logger.error(f"Invalid identifier format: {identifier}")
-                    continue
+        with Database() as db:
+            for identifier in identifiers:
+                if identifier.startswith('https://t.me/'):
+                    identifier = identifier.split('/')[-1]
+                elif identifier.startswith('@'):
+                    pass
+                else:
+                    try:
+                        identifier = int(identifier)
+                    except ValueError:
+                        logger.error(f"Invalid identifier format: {identifier}")
+                        continue
 
-            # Используем run_coroutine_threadsafe для вызова асинхронной функции
-            future = asyncio.run_coroutine_threadsafe(user_manager.add_user(db, identifier), asyncio_loop)
-            result = future.result()
-            logger.debug(f"User added: {result}")
-            socketio.emit('log', {'message': f"User {identifier} added: {result}"})
+                # Используем run_coroutine_threadsafe для вызова асинхронной функции
+                future = asyncio.run_coroutine_threadsafe(user_manager.add_user(db, identifier), asyncio_loop)
+                result = future.result()
+                logger.debug(f"User added: {result}")
+                socketio.emit('log', {'message': f"User {identifier} added: {result}"})
         
         return jsonify({"status": "success"}), 200
     except Exception as e:
@@ -143,9 +144,10 @@ def add_user():
 @app.route('/api/users/list', methods=['GET'])
 def list_users():
     try:
-        users = user_manager.list_users(db)
-        user_list = [{"userid": user[0], "username": user[1], "first_name": user[2], "type": user[4]} for user in users]
-        return jsonify(user_list), 200
+        with Database() as db:
+            users = user_manager.list_users(db)
+            user_list = [{"userid": user[0], "username": user[1], "first_name": user[2], "type": user[4]} for user in users]
+            return jsonify(user_list), 200
     except Exception as e:
         logger.exception(f"Exception occurred while fetching users: {e}")
         return jsonify({"status": "failed", "error": str(e)}), 500
@@ -155,7 +157,8 @@ def delete_user():
     try:
         data = request.get_json()
         user_id = data.get('user_id')
-        user_manager.delete_user(db, user_id)
+        with Database() as db:
+            user_manager.delete_user(db, user_id)
         socketio.emit('log', {'message': f"User {user_id} deleted."})
         return jsonify({"status": "success"}), 200
     except Exception as e:
@@ -166,8 +169,10 @@ def delete_user():
 @app.route('/api/users/delete-all', methods=['POST'])
 def delete_all_users():
     try:
-        db.cursor.execute("DELETE FROM users")
-        db.connection.commit()
+        with Database() as db:
+            with db.cursor() as cursor:
+                cursor.execute("DELETE FROM users")
+                db.commit()
         logger.info("All users deleted from the database.")
         socketio.emit('log', {'message': "All users deleted from the database."})
         return jsonify({"status": "success"}), 200
@@ -185,8 +190,8 @@ def check_whitelist():
         if user_id is None:
             return jsonify({"status": "failed", "error": "No user_id provided"}), 400
 
-        # Используем готовый метод из db_manager.py
-        is_authorized = db.is_user_in_whitelist(user_id)
+        with Database() as db:
+            is_authorized = db.is_user_in_whitelist(user_id)
 
         if is_authorized:
             logger.info(f"User {user_id} is authorized.")

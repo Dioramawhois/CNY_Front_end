@@ -11,40 +11,53 @@ class Database:
             user=DB_USER,
             password=DB_PASSWORD
         )
-        self.cursor = self.connection.cursor()
         logger.info("Database connection established")
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.connection.close()
+        logger.info("Database connection closed")
 
     def add_user(self, user_id, username, first_name, date_added, user_type):
         try:
-            self.cursor.execute(
-                "INSERT INTO users (userid, username, user_firstname, date_added, type) VALUES (%s, %s, %s, %s, %s)",
-                (user_id, username, first_name, date_added, user_type)
-            )
-            self.connection.commit()
-            logger.info(f"User {username} added to the database.")
+            with self.connection.cursor() as cursor:
+                cursor.execute(
+                    "INSERT INTO users (userid, username, user_firstname, date_added, type) VALUES (%s, %s, %s, %s, %s)",
+                    (user_id, username, first_name, date_added, user_type)
+                )
+                self.connection.commit()
+                logger.info(f"User {username} added to the database.")
         except Exception as e:
             logger.error(f"Error adding user {username} to the database: {e}")
             self.connection.rollback()
 
     def list_users(self):
-        self.cursor.execute("SELECT * FROM users")
-        return self.cursor.fetchall()
+        try:
+            with self.connection.cursor() as cursor:
+                cursor.execute("SELECT * FROM users")
+                return cursor.fetchall()
+        except Exception as e:
+            logger.error(f"Error listing users: {e}")
+            return []
 
     def delete_user(self, user_id):
         try:
-            self.cursor.execute("DELETE FROM users WHERE userid = %s", (user_id,))
-            self.connection.commit()
-            logger.info(f"User with ID {user_id} deleted from the database.")
+            with self.connection.cursor() as cursor:
+                cursor.execute("DELETE FROM users WHERE userid = %s", (user_id,))
+                self.connection.commit()
+                logger.info(f"User with ID {user_id} deleted from the database.")
         except Exception as e:
             logger.error(f"Error deleting user with ID {user_id}: {e}")
             self.connection.rollback()
 
     def is_user_in_whitelist(self, user_id):
         try:
-            self.cursor.execute("SELECT * FROM whitelist WHERE user_id = %s", (user_id,))
-            result = self.cursor.fetchone()
-            return result is not None
+            with self.connection.cursor() as cursor:
+                cursor.execute("SELECT * FROM whitelist WHERE user_id = %s", (user_id,))
+                result = cursor.fetchone()
+                return result is not None
         except Exception as e:
             logger.error(f"Error checking whitelist for user {user_id}: {e}")
             return False
-

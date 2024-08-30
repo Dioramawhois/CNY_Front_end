@@ -200,3 +200,111 @@
 2024-08-26 20:48:03.576 | INFO     | __main__:send_messages_to_all_users:82 - Message sent to user testirovkaebalkarot
 2024-08-26 20:48:29.445 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
 2024-08-26 20:48:29.449 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-26 20:49:47.463 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-26 20:49:47.465 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-26 21:20:35.773 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-26 21:20:35.778 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-26 21:20:43.027 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-26 21:20:43.029 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-26 21:54:02.092 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-26 21:54:02.094 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-26 22:02:19.042 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-26 22:02:19.046 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-27 16:21:30.196 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-27 16:21:30.201 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-27 16:22:43.793 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-27 16:22:43.797 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-27 16:42:09.477 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-27 16:42:09.523 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-27 16:42:09.933 | INFO     | __main__:start_telegram_client:43 - Telegram client started successfully.
+2024-08-27 16:42:26.286 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-27 16:42:26.288 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-27 16:42:40.121 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-27 16:42:40.122 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-27 22:27:25.625 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-27 22:27:25.627 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-27 22:28:09.603 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-27 22:28:09.604 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-27 22:28:12.654 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-27 22:28:12.655 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-28 01:32:16.094 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-28 01:32:16.099 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-28 18:47:08.323 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-28 18:47:08.327 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-28 20:46:01.999 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-28 20:46:02.003 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-28 20:52:10.010 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-28 20:52:10.013 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-28 20:58:27.377 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-28 20:58:27.379 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-28 22:30:38.453 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-28 22:30:38.455 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-29 16:35:00.553 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 16:35:00.558 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-29 18:22:21.109 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 18:22:21.111 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-29 19:51:40.378 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-29 19:51:40.425 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-29 19:51:41.220 | INFO     | __main__:start_telegram_client:43 - Telegram client started successfully.
+2024-08-29 20:14:01.534 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 6094566638
+2024-08-29 20:14:01.539 | INFO     | __main__:check_whitelist:192 - User 6094566638 is authorized.
+2024-08-29 20:24:37.853 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 20:24:37.860 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-29 20:25:08.574 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 20:25:08.577 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-29 20:28:35.260 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 20:28:35.265 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-29 22:33:46.886 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 22:33:46.891 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-29 22:50:11.279 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-29 22:50:11.282 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-30 16:35:04.655 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 16:35:04.659 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-30 16:37:24.775 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 16:37:24.780 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-30 16:53:57.433 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 16:53:57.435 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-30 19:19:28.718 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 19:19:28.720 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 0: SSL connection has been closed unexpectedly
+
+2024-08-30 19:19:28.721 | INFO     | __main__:check_whitelist:195 - User 0 is not authorized.
+2024-08-30 20:20:10.587 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-30 20:20:10.636 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-30 20:20:11.032 | INFO     | __main__:start_telegram_client:43 - Telegram client started successfully.
+2024-08-30 21:28:13.393 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 21:28:13.395 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 0: SSL connection has been closed unexpectedly
+
+2024-08-30 21:28:13.395 | INFO     | __main__:check_whitelist:195 - User 0 is not authorized.
+2024-08-30 21:28:13.485 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 21:28:13.485 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 0: cursor already closed
+2024-08-30 21:28:13.485 | INFO     | __main__:check_whitelist:195 - User 0 is not authorized.
+2024-08-30 21:28:17.206 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 21:28:17.207 | ERROR    | db_manager:is_user_in_whitelist:48 - Error checking whitelist for user 0: cursor already closed
+2024-08-30 21:28:17.207 | INFO     | __main__:check_whitelist:195 - User 0 is not authorized.
+2024-08-30 21:33:00.852 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-30 21:33:00.909 | INFO     | db_manager:__init__:15 - Database connection established
+2024-08-30 21:33:01.350 | INFO     | __main__:start_telegram_client:43 - Telegram client started successfully.
+2024-08-30 21:33:14.895 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 21:33:14.899 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-30 21:33:57.345 | INFO     | __main__:check_whitelist:183 - Checking whitelist for user_id: 0
+2024-08-30 21:33:57.347 | INFO     | __main__:check_whitelist:192 - User 0 is authorized.
+2024-08-30 22:12:24.722 | INFO     | __main__:start_telegram_client:42 - Telegram client started successfully.
+2024-08-30 22:12:31.999 | INFO     | __main__:check_whitelist:188 - Checking whitelist for user_id: 0
+2024-08-30 22:12:32.013 | ERROR    | __main__:check_whitelist:204 - Error checking whitelist for user 0: 'psycopg2.extensions.connection' object has no attribute 'is_user_in_whitelist'
+2024-08-30 22:12:34.447 | INFO     | __main__:check_whitelist:188 - Checking whitelist for user_id: 0
+2024-08-30 22:12:34.461 | ERROR    | __main__:check_whitelist:204 - Error checking whitelist for user 0: 'psycopg2.extensions.connection' object has no attribute 'is_user_in_whitelist'
+2024-08-30 22:15:27.485 | INFO     | db_manager:__init__:14 - Database connection established
+2024-08-30 22:15:27.910 | INFO     | __main__:start_telegram_client:42 - Telegram client started successfully.
+2024-08-30 22:15:33.040 | INFO     | __main__:check_whitelist:188 - Checking whitelist for user_id: 0
+2024-08-30 22:15:33.056 | INFO     | db_manager:__init__:14 - Database connection established
+2024-08-30 22:15:33.057 | ERROR    | db_manager:is_user_in_whitelist:54 - Error checking whitelist for user 0: 'Database' object has no attribute 'cursor'
+2024-08-30 22:15:33.058 | INFO     | db_manager:__exit__:21 - Database connection closed
+2024-08-30 22:15:33.058 | INFO     | __main__:check_whitelist:200 - User 0 is not authorized.
+2024-08-30 22:16:49.280 | INFO     | db_manager:__init__:14 - Database connection established
+2024-08-30 22:16:49.726 | INFO     | __main__:start_telegram_client:42 - Telegram client started successfully.
+2024-08-30 22:16:53.548 | INFO     | __main__:check_whitelist:188 - Checking whitelist for user_id: 0
+2024-08-30 22:16:53.563 | INFO     | db_manager:__init__:14 - Database connection established
+2024-08-30 22:16:53.571 | INFO     | db_manager:__exit__:21 - Database connection closed
+2024-08-30 22:16:53.572 | INFO     | __main__:check_whitelist:197 - User 0 is authorized.
+2024-08-30 22:16:57.499 | INFO     | db_manager:__init__:14 - Database connection established
+2024-08-30 22:16:57.503 | INFO     | db_manager:__exit__:21 - Database connection closed
